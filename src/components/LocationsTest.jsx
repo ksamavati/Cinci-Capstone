@@ -1,24 +1,19 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
 import LocationRenderer from './LocationRenderer';
-import '../css/Locations.css';
+import database from '../assets/db.json';
 
-const Locations = () => {
+
+const LocationsTest = () => {
 	const [locArr, setLocArr] = useState([]);
-
+	
 	// Runs once when compponent renders, equivalent to ComponentDidMount
 	useEffect(() => {
-		axios.get('/locations/')
-			.then(response => {
-				setLocArr(response.data);
-			})
-			.catch((error) => {
-				console.log(error);
-			});
+		setLocArr(database);
 	}, []);
 
 	return (
 		<div>
+		
 			{/* <div className="row row-cols-2 row-cols-lg-5 row-cols-xl-6 g-4 justify-content-center"> */}
 			<div className="row justify-content-center">
 				{/* {locationsJSX} */}
@@ -28,4 +23,4 @@ const Locations = () => {
 	)
 }
 
-export default Locations
+export default LocationsTest
