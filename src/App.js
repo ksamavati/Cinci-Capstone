@@ -6,7 +6,6 @@ import Breweries from './components/Breweries';
 import Locations from './components/Locations';
 import LocationsTest from './components/LocationsTest';
 import Contact from './components/Contact';
-import Bars from './components/Breweries';
 import {Routes, Route} from 'react-router-dom';
 
 

@@ -2,11 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../css/Navbar.css';
 
+
 const Navbar = () => {
 	return (
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 			<div class="container justify-content-between">
-				<a href="#" class="navbar-brand">Discover<b>Cincinnati</b></a>
+				<Link to='/' className="navbar-brand">Discover<b>Cincinnati</b></Link>
 				{/* <!-- Hamburger button --> */}
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
