@@ -4,6 +4,7 @@ import Home from './components/Home';
 import Footer from './components/Footer';
 import Locations from './components/Locations';
 import Contact from './components/Contact';
+import Bars from './components/Breweries';
 import {Routes, Route} from 'react-router-dom';
 
 
