@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import LocationRenderer from './LocationRenderer';
+import '../css/Locations.css';
 
 const Locations = () => {
 	const [locArr, setLocArr] = useState([]);
