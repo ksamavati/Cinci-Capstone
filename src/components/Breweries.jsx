@@ -3,6 +3,7 @@ import Carousel from "react-bootstrap/Carousel";
 
 function Breweries() {
   return (
+    <section>
     <Carousel>
       <Carousel.Item interval={1000}>
         <img
@@ -39,6 +40,7 @@ function Breweries() {
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
+    </section>
   );
 }
 export default Breweries;
