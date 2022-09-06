@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import LocationRenderer from './LocationRenderer';
 import database from '../assets/db.json';
+import '../css/Locations.css';
 
 
 const LocationsTest = () => {
