@@ -1,0 +1,9 @@
+.carousel-item {
+	height: 25vw;
+	overflow: hidden;
+}
+
+.my-car-img {
+	transform: translateY(-26%);
+	filter: brightness(55%);
+}
