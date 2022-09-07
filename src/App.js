@@ -22,7 +22,8 @@ function App() {
 				<Routes>
 					<Route exact path="/" element={<Home />} />
 					<Route path="/contact" element={<Contact />} />
-					<Route path="/locations" element={<Locations />} />
+					{/* <Route path="/locations" element={<Locations />} /> */}
+					<Route path="/locations" element={<Category />} />
 					<Route path="/breweries" element={<Breweries />} />
 					<Route path="/locationstest" element={<LocationsTest />} />
 					<Route path="/:cat" element={<Category />} />

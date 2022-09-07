@@ -4,6 +4,7 @@ import axios from 'axios';
 import LocationRenderer from './LocationRenderer';
 import Carousel from "react-bootstrap/Carousel";
 import '../css/Locations.css';
+import { motion } from 'framer-motion';
 
 const Locations = (props) => {
 	const [locArr, setLocArr] = useState([]);
@@ -11,6 +12,15 @@ const Locations = (props) => {
 
 	// Runs once when compponent renders, equivalent to ComponentDidMount
 	useEffect(() => {
+		if (cat === "" || cat === undefined) {
+			axios.get('/locationsdb/')
+			.then(response => {
+				setLocArr(response.data);
+			})
+			.catch((error) => {
+				console.log(error);
+			});
+		} else {
 		axios.get('/locationsdb/' + cat)
 			.then(response => {
 				setLocArr(response.data);
@@ -18,6 +28,7 @@ const Locations = (props) => {
 			.catch((error) => {
 				console.log(error);
 			});
+		}
 	}, [cat]);
 
 	return (
@@ -60,9 +71,14 @@ const Locations = (props) => {
       </Carousel.Item>
     </Carousel>
 
-			<div className="row justify-content-center">
+			<motion.div
+				animate ={{ opacity: 1}}
+				initial={{ opacity: 0 }}
+				exit={{ opacity: 0 }}
+				layout
+			 className="row justify-content-center">
 				<LocationRenderer locationsArray={locArr} />
-			</div>
+			</motion.div>
 		</div>
 	)
 }

@@ -79,8 +79,8 @@
 	{
 		"_id": "630e325435f1e753fa404296",
 		"id": 8,
-		"name": "1241 Elm St.",
-		"address1": "Cincinnati Symphony Orchestra & Cincinnati Pops Music Hall",
+		"name": "Cincinnati Symphony Orchestra & Cincinnati Pops Music Hall",
+		"address1": "1241 Elm St.",
 		"address2": "Cincinnati, OH 45202",
 		"phone": "(513) 621-1919",
 		"category": "arts",
