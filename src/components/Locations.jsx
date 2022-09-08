@@ -8,7 +8,7 @@ const Locations = () => {
 
 	// Runs once when compponent renders, equivalent to ComponentDidMount
 	useEffect(() => {
-		axios.get('/locations/')
+		axios.get('/locationsdb/')
 			.then(response => {
 				setLocArr(response.data);
 			})

@@ -79,8 +79,13 @@
 	{
 		"_id": "630e325435f1e753fa404296",
 		"id": 8,
+<<<<<<< HEAD
 		"name": "Cincinnati Symphony Orchestra & Cincinnati Pops Music Hall.",
 		"address1": "1241 Elm St",
+=======
+		"name": "Cincinnati Symphony Orchestra & Cincinnati Pops Music Hall",
+		"address1": "1241 Elm St.",
+>>>>>>> e0408e2c0a3028a04d45a67b0fb8e853e57b58ff
 		"address2": "Cincinnati, OH 45202",
 		"phone": "(513) 621-1919",
 		"category": "arts",
@@ -171,7 +176,7 @@
 		"address1": "10245 Winton Rd.",
 		"address2": "Cincinnati, OH 45231",
 		"phone": "(513) 521-7275",
-		"category": "sports",
+		"category": "parks",
 		"description": "Great Parks of Hamilton County preserves natural resources and provides outdoor recreation and nature education opportunities. Great Parks is comprised of 21 parks and preserves, spanning over 17,600 acres. So come on out and enjoy all that nature has to offer!",
 		"image": "https://i.imgur.com/L2V1WHP.jpg"
 	},
@@ -523,7 +528,7 @@
 		"address1": "39 E. 13th St.",
 		"address2": "Over-the-Rhine",
 		"phone": "",
-		"category": "Bars",
+		"category": "bars",
 		"description": "Cincinnati hospitality mavens Julia Petiprin and Catherine Manabat opened Homemakers Bar at the corner of 13th and Walnut streets in Over-the-Rhine. The duo created a space inspired by a retro vibe and the domestic cocktails of the 1950s through the 1970s. Outside, the bar welcomes folks to sip on cocktails in its string-lit Outpost.",
 		"image": "https://i.imgur.com/heP2H5F.jpg"
 	},
@@ -534,7 +539,7 @@
 		"address1": "9000 Reading Road",
 		"address2": "Reading",
 		"phone": "",
-		"category": "Bars",
+		"category": "bars",
 		"description": "This American Legion bar has been around since 1919, but opened up to non-members roughly six years ago. However, last spring — right before the pandemic hit locally — the almost-century-old bar reopened with a top-to-bottom revamp. Dubbed Dug Out Bar, the destination is well-known for having the \"coldest and cheapest beer in town,\" with brews priced at a meager $2.25. The bar features \"raffle machines,\" as well as pool and shuffleboard tables.",
 		"image": "https://i.imgur.com/5WBN2Nb.jpg"
 	},
@@ -545,7 +550,7 @@
 		"address1": "6099 Montgomery Road",
 		"address2": "Pleasant Ridge",
 		"phone": "",
-		"category": "Bars",
+		"category": "bars",
 		"description": "While inspired by Prohibition and its associated speakeasies, this lounge nestled above Pleasant Ridge's Goodfellas Pizzeria doesn't require a secret password. Instead, just walk up the stairs and order one of the more than 250 bourbons, hand-crafted cocktails or wide variety of beers from your knowledgeable bartender. This is the third Greater Cincinnati location for the pizza/bourbon bar combo.",
 		"image": "https://i.imgur.com/Wgj3Mty.jpg"
 	},
@@ -556,7 +561,7 @@
 		"address1": "25 Ogden Place",
 		"address2": "Cincinnati, OH 45202",
 		"phone": "",
-		"category": "Bars",
+		"category": "bars",
 		"description": "The second oldest bar in Cincinnati, O'Malley's in the Alley is a local favorite for those looking for a bite to eat, have a drink, or gear up or cool down from watching the Reds or Bengals. Streetcar Stop #18: Fountain Square",
 		"image": "https://i.imgur.com/WPXAf3D.jpg"
 	},
@@ -567,7 +572,7 @@
 		"address1": "1432 Vine Street",
 		"address2": "Cincinnati, OH 45202",
 		"phone": "",
-		"category": "Bars",
+		"category": "bars",
 		"description": "Nostalgia is an intimate jazz lounge, wine bar located in the heart of OTR, offering over 40 wines by the glass and/or bottle (eight of which are on tap!) with a focus on highlighting women & minority winemakers and producers.",
 		"image": "https://i.imgur.com/ZAw5m2J.jpg"
 	},
@@ -578,7 +583,7 @@
 		"address1": "1134 Main Street",
 		"address2": "Cincinnati, OH 45202",
 		"phone": "",
-		"category": "Bars",
+		"category": "bars",
 		"description": "Features classic and innovative new craft cocktails, homemade ingredients, coffee beverages and bottled craft beers. Streetcar Stop #6: Hanke Exchange Station, 12th & Main",
 		"image": "https://i.imgur.com/gabkhFB.jpg"
 	},
@@ -589,7 +594,7 @@
 		"address1": "949 Pavilion St.",
 		"address2": "Cincinnati, Ohio, USA",
 		"phone": "+1 513 744 9200",
-		"category": "Bars",
+		"category": "bars",
 		"description": "This venue is comprised of an eclectic lounge with skyline scenery and intimate lighting. For live music lovers, there are three different floors offering shows throughout the week. The Pavilion is best known for its four outdoor decks specially designed to offer one of the most delightful views of the Cincinnati cityscape.",
 		"image": "https://i.imgur.com/tUIaSYZ.jpg"
 	}

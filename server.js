@@ -24,7 +24,7 @@ connection.once('open', () => {
 })
 
 const locationsRouter = require('./routes/locations');
-app.use('/locations', locationsRouter);
+app.use('/locationsdb', locationsRouter);
 
 app.use(express.static('./build'));
 
