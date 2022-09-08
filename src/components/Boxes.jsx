@@ -54,7 +54,7 @@ const Boxes = () => {
                     Cincinnati and Northern Kentucky has surpased the number
                     that exhisted prior to Prohibition.
                   </p>
-                  <button className=" ">Read More</button>
+                  <button className="btn btn-success">Read More</button>
                 </div>
               </div>
             </div>
