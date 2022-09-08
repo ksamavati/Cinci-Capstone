@@ -3,6 +3,7 @@ import LocationRenderer from './LocationRenderer';
 import database from '../assets/db.json';
 import Carousel from "react-bootstrap/Carousel";
 import '../css/Locations.css';
+import { motion } from 'framer-motion';
 
 
 const LocationsTest = () => {
@@ -53,9 +54,14 @@ const LocationsTest = () => {
       </Carousel.Item>
     </Carousel>
 		
-			<div className="row justify-content-center">
+		<motion.div
+				animate ={{ opacity: 1}}
+				initial={{ opacity: 0 }}
+				exit={{ opacity: 0 }}
+				layout
+			 className="para-cols">
 				<LocationRenderer locationsArray={locArr} />
-			</div>
+			</motion.div>
 		</div>
 	)
 }

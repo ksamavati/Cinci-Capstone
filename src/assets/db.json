@@ -79,7 +79,7 @@
 	{
 		"_id": "630e325435f1e753fa404296",
 		"id": 8,
-		"name": "Cincinnati Symphony Orchestra & Cincinnati Pops Music Hall",
+		"name": "Cincinnati Pops Music Hall",
 		"address1": "1241 Elm St.",
 		"address2": "Cincinnati, OH 45202",
 		"phone": "(513) 621-1919",
@@ -134,9 +134,9 @@
 	{
 		"_id": "630e34c535f1e753fa40429d",
 		"id": 13,
-		"name": "Cincinnati Reds",
-		"address1": "Great American Ball Park",
-		"address2": "100 Joe Nuxhall Way, Cincinnati, OH 45202-4109",
+		"name": "Great American Ball Park",
+		"address1": "100 Joe Nuxhall Way,",
+		"address2": "Cincinnati, OH 45202-4109",
 		"phone": "(513) 765-7000",
 		"category": "sports",
 		"description": "Cincinnati is home to the Major League Baseball team the Cincinnati Reds. The Great American Ball Park is the perfect place to experience a Red’s baseball game. Enjoy a fun afternoon or evening with family, friends, or even host a special event at the Red’s ballpark. Visit www.reds.com to purchase Red’s tickets or your special event needs.",

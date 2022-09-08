@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Subnav = () => {
 	return (
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style={{paddingTop: 0}}>
 			<div class="container justify-content-between">
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
