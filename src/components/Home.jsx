@@ -2,6 +2,7 @@ import React from 'react';
 import { useLayoutEffect } from 'react';
 import '../css/Home.css';
 import bgvideo from '../assets/home/landingvideo.mp4';
+import '../css/Home copy.css';
 
 
 console.log(bgvideo);
@@ -13,13 +14,11 @@ const Home = () => {
 
 	return (
 		<div>
-		<section id="hero" className="d-flex justify-content-center align-items-center">
-    <div className="container position-relative" data-aos="zoom-in" data-aos-delay="100">
-      <h1>Learning Today,<br />Leading Tomorrow</h1>
-      <h2>We are team of talented designers making websites with Bootstrap</h2>
-      <a href="courses.html" className="btn-get-started">Get Started</a>
-    </div>
-  </section>
+		<section className="my-video-container" id="section1">
+    		<video className="my-fullscreen-video my-background" src={bgvideo} muted loop autoPlay></video>
+				<h1 className="text-white my-tagline">Welcome to Cincinnati
+			</h1>
+  		</section>
 	{/* <!-- End Hero --> */}
 
   <main id="main">
@@ -30,11 +29,18 @@ const Home = () => {
 
         <div className="row">
           <div className="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
-            <img src="assets/img/about.jpg" className="img-fluid" alt="" />
+            <img src="assets/img/cincyhistory.jpg" className="img-fluid" alt="" />
           </div>
           <div className="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
-            <h3>This is Kayvon's Change. Lorem ipsum dolor sit amet.</h3>
-            <p className="fst-italic">
+            <h3>Cincinnati History</h3>
+            <p>Cincinnati was founded in 1788 by Colonel Robert Patterson and Judge John Cleves Symmes. They named the city "Cincinnati" after the Society of the Cincinnati, of which they were members.</p>
+
+<p>Cincinnati was the first major city founded after the American Revolution, and because of this, it is sometimes called "The Birthplace of the West."</p>
+
+<p>Cincinnati grew rapidly in its early years, and by the 1830s it was the sixth-largest city in the United States. It was a major stop on the Underground Railroad, and its population was very diverse for its time.</p>
+
+<p>Cincinnati was a major manufacturing city during the Industrial Revolution, and it remained an important manufacturing center even after the decline of industry in the mid-20th century. Today, the city is known for its arts and culture scene, as well as its food (Cincinnati chili is a popular dish).</p>
+            {/* <p className="fst-italic">
               What, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
               magna aliqua.
             </p>
@@ -42,10 +48,10 @@ const Home = () => {
               <li><i className="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
               <li><i className="bi bi-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
               <li><i className="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-            </ul>
-            <p>
+            </ul> */}
+            {/* <p>
               Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-            </p>
+            </p> */}
 
           </div>
         </div>
@@ -61,8 +67,8 @@ const Home = () => {
         <div className="row counters">
 
           <div className="col-lg-3 col-6 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="1232" data-purecounter-duration="1" className="purecounter"></span>
-            <p>Students</p>
+            <span data-purecounter-start="0" data-purecounter-end="302687" data-purecounter-duration="1" className="purecounter"></span>
+            <p>Population</p>
           </div>
 
           <div className="col-lg-3 col-6 text-center">
