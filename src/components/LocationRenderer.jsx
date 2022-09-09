@@ -3,6 +3,10 @@ import { motion } from 'framer-motion';
 import '../css/Parallax.css';
 
 const LocationRenderer = (props) => {
+	const handleTouch = event => {
+		event.curentTarget.classList.toggle('hover')
+	}
+
 	return props.locationsArray.map(location => {
 		return (
 		<motion.div
@@ -10,18 +14,18 @@ const LocationRenderer = (props) => {
 				animate={{opacity: 1}}
 				initial={{opacity: 0}}
 				exit={{opacity: 0}}
-			 key={location.id} className='para-col lg-col-3' onTouchStart="this.classList.toggle('hover');">
-							<div class="para-container">
-					<div class="para-front" style={{backgroundImage: "url("+ location.image +")"}}>
-						<div class="para-inner">
+			 key={location.id} className='para-col lg-col-3' onTouchStart={handleTouch}>
+							<div className="para-container">
+					<div className="para-front" style={{backgroundImage: "url("+ location.image +")"}}>
+						<div className="para-inner">
 							<p>{location.name}</p>
 							<span>{location.address1}</span>
 						  <span>{location.address2}</span>
 						  <span>{location.phone}</span>
 						</div>
 					</div>
-					<div class="para-back">
-						<div class="para-inner">
+					<div className="para-back">
+						<div className="para-inner">
 						  <p>{location.description}</p>
 						</div>
 					</div>

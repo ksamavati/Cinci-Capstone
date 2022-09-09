@@ -33,7 +33,7 @@ const Locations = (props) => {
 
 	return (
 		<div>
-    <Carousel class='my-carousel'>
+    <Carousel className='my-carousel'>
       <Carousel.Item interval={1000}>
         <img
           className="d-block w-100"
