@@ -3,25 +3,26 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 const OneLocation = () => {
-	// const [locArr, setLocArr] = useState([]);
+	const [mapsData, setMapsData] = useState([]);
 	const location = useLocation();
 	const navigate = useNavigate();
 	const { loc } = location.state;
 
 	// Runs once when compponent renders, equivalent to ComponentDidMount
+	// This will call Google Maps API
 	useEffect(() => {
-		if (cat === "" || cat === undefined) {
+		if (loc === "" || loc === undefined) {
 			alert("Error: The app did not receive data for this location.");
 		} else {
-		axios.get('/locationsdb/' + cat)
+		axios.get('https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJA-qv_um1QYgRAhCxo0Jd_1o')
 			.then(response => {
-				setLocArr(response.data);
+				setMapsData(response.data);
 			})
 			.catch((error) => {
 				console.log(error);
 			});
 		}
-	}, [cat]);
+	}, [loc]);
 
 	return (
 		<div>
@@ -34,6 +35,7 @@ const OneLocation = () => {
 			<p>{loc.phone}</p>
 			<p>{loc.category}</p>
 			<p>{loc.description}</p>
+			<p>{mapsData.weekday_text}</p>
 			
 		</div>
 	)
