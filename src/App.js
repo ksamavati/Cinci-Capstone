@@ -25,7 +25,7 @@ function App() {
 					<Route path="/locations" element={<Category />} />
 					<Route path="/map" element={<MapPage />} />
 					<Route path="/contact" element={<Contact />} />
-					<Route path="/breweries" element={<Breweries />} />
+					<Route path="/breweriesPage" element={<Breweries />} />
 					<Route path="/locationstest" element={<LocationsTest />} />
 					<Route path="/destination-:id" element={<OneLocation />} />
 					<Route path="/:cat" element={<Category />} />
