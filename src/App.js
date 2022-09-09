@@ -8,6 +8,7 @@ import Locations from './components/Locations';
 import LocationsTest from './components/LocationsTest';
 import OneLocation from './components/OneLocation';
 import Contact from './components/Contact';
+import Boxes from './components/Boxes';
 import {Routes, Route} from 'react-router-dom';
 
 
@@ -25,6 +26,7 @@ function App() {
 					<Route path="/map" element={<MapPage />} />
 					<Route path="/contact" element={<Contact />} />
 					<Route path="/locationstest" element={<LocationsTest />} />
+					<Route path="/boxes" element={<Boxes />} />
 					<Route path="/destination-:id" element={<OneLocation />} />
 					<Route path="/:cat" element={<Category />} />
 				</Routes>

@@ -17,18 +17,17 @@ const Navbar = () => {
 
 	
 	return (
-		<nav onMouseLeave={handleMouseOut}>
-		<div className="navbar navbar-expand-lg navbar-dark bg-dark">
-			<div className="container justify-content-between">
-				<Link to='/' className="navbar-brand"
-								onMouseOver={handleMouseOut}>Discover<b>Cincinnati</b></Link>
-				{/* <!-- Hamburger button --> */}
-				<button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-					<span className="navbar-toggler-icon"></span>
-				</button>
-				<div className="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul className="navbar-nav me-auto mb-2 mb-lg-0">
-						<li className="nav-item">
+		<header id="header" class="fixed-top" onMouseLeave={handleMouseOut}>
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto"><Link className="nav-link" to="/"
+								onMouseOver={handleMouseOut}>Discover<b>Cincinnati</b></Link></h1>
+      {/* <!-- Uncomment below if you prefer to use an image logo --> */}
+      {/* <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>--> */}
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+				<li className="">
 							<Link className="nav-link" to="/"
 								onMouseOver={handleMouseOut}>Home</Link>
 						</li>
@@ -38,11 +37,6 @@ const Navbar = () => {
 								>Locations</Link>
 						</li>
 						<li className="nav-item">
-							<Link className="nav-link" to="/locationstest"
-								onMouseOver={handleMouseOut}
-							>LocationsTest</Link>
-						</li>
-						<li className="nav-item">
 							<Link className="nav-link" to="/map"
 								onMouseOver={handleMouseOut}>Map</Link>
 						</li>
@@ -50,12 +44,24 @@ const Navbar = () => {
 							<Link className="nav-link" to="/contact"
 								onMouseOver={handleMouseOut}>Contact</Link>
 						</li>
-					</ul>
-				</div>
-				</div>
-		</div>
+						<li className="nav-item">
+							<Link className="nav-link" to="/boxes"
+								onMouseOver={handleMouseOut}>Boxes</Link>
+						</li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+			{/* <!-- .navbar --> */}
+
+			<li className="get-started-btn">
+							<Link className="nav-link" to="/locationstest"
+								onMouseOver={handleMouseOut}
+							>LocationsTest</Link>
+						</li>
+
+    </div>
 		{isHovering && <Subnav />}
-		</nav>
+  </header>
 	)
 }
 

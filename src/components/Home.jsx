@@ -1,4 +1,5 @@
 import React from 'react';
+import { useLayoutEffect } from 'react';
 import '../css/Home.css';
 import bgvideo from '../assets/home/landingvideo.mp4';
 
@@ -6,6 +7,10 @@ import bgvideo from '../assets/home/landingvideo.mp4';
 console.log(bgvideo);
 
 const Home = () => {
+	useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+	});
+
 	return (
 		<div>
 		<section id="hero" className="d-flex justify-content-center align-items-center">

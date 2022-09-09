@@ -60,7 +60,6 @@ const Category = (props) => {
 
 	// Runs when locArr gets updated
 	useEffect(() => {
-		console.log(locArr.length);
 		if (locArr.length !== 0 && typeof locArr !== 'undefined') {
 		}
 	}, [locArr]);
