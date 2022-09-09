@@ -2,8 +2,6 @@ import React from 'react';
 import '../css/Home.css';
 import bgvideo from '../assets/home/landingvideo.mp4';
 
-console.log(bgvideo);
-
 const Home = () => {
 	return (
 		<div>

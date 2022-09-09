@@ -8,6 +8,21 @@ const OneLocation = () => {
 	const navigate = useNavigate();
 	const { loc } = location.state;
 
+	// Runs once when compponent renders, equivalent to ComponentDidMount
+	useEffect(() => {
+		if (cat === "" || cat === undefined) {
+			alert("Error: The app did not receive data for this location.");
+		} else {
+		axios.get('/locationsdb/' + cat)
+			.then(response => {
+				setLocArr(response.data);
+			})
+			.catch((error) => {
+				console.log(error);
+			});
+		}
+	}, [cat]);
+
 	return (
 		<div>
 		<button onClick={() => navigate(-1)}>Go back</button>
