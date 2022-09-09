@@ -28,7 +28,7 @@ const Home = () => {
             <img src="assets/img/about.jpg" className="img-fluid" alt="" />
           </div>
           <div className="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
-            <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+            <h3>This is Kayvon's Change. Lorem ipsum dolor sit amet.</h3>
             <p className="fst-italic">
               What, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
               magna aliqua.
