@@ -6,13 +6,12 @@ import Carousel from "react-bootstrap/Carousel";
 import '../css/Locations.css';
 import { motion } from 'framer-motion';
 
-const Category = (props) => {
+const Locations = (props) => {
 	const [locArr, setLocArr] = useState([]);
 	const { cat } = useParams();
 
 	// Runs once when compponent renders, equivalent to ComponentDidMount
 	useEffect(() => {
-		// If no category, load all locations
 		if (cat === "" || cat === undefined) {
 			axios.get('/locationsdb/')
 			.then(response => {
@@ -34,10 +33,10 @@ const Category = (props) => {
 
 	return (
 		<div>
-    <Carousel>
-      <Carousel.Item interval={4000}>
+    <Carousel className='my-carousel'>
+      <Carousel.Item interval={1000}>
         <img
-          className="d-block w-100 my-car-img"
+          className="d-block w-100"
           src="https://images.unsplash.com/photo-1557771834-305b440777de?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
           alt="First slide"
         />
@@ -46,9 +45,9 @@ const Category = (props) => {
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item interval={4000}>
+      <Carousel.Item interval={500}>
         <img
-          className="d-block w-100 my-car-img"
+          className="d-block w-100"
           src="https://images.unsplash.com/photo-1598495886228-fedb44a5b5a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1191&q=80"
 					alt="Second slide"
         />
@@ -57,9 +56,9 @@ const Category = (props) => {
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item interval={4000}>
+      <Carousel.Item>
         <img
-          className="d-block w-100 my-car-img"
+          className="d-block w-100"
           src="https://images.unsplash.com/photo-1633949969886-44f3be012a0f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
           alt="Third slide"
         />
@@ -77,11 +76,11 @@ const Category = (props) => {
 				initial={{ opacity: 0 }}
 				exit={{ opacity: 0 }}
 				layout
-			 className="para-cols">
+			 className="row justify-content-center">
 				<LocationRenderer locationsArray={locArr} />
 			</motion.div>
 		</div>
 	)
 }
 
-export default Category
+export default Locations

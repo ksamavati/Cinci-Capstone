@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import '../css/Parallax.css';
+import { Link } from 'react-router-dom';
 
 const LocationRenderer = (props) => {
 	const handleTouch = event => {
@@ -9,6 +10,7 @@ const LocationRenderer = (props) => {
 
 	return props.locationsArray.map(location => {
 		return (
+			<Link to={"/destination-" + location.id} state={{ loc: location }}>
 		<motion.div
 				layout
 				animate={{opacity: 1}}
@@ -31,7 +33,7 @@ const LocationRenderer = (props) => {
 					</div>
 				</div>
 		</motion.div>
-
+			</Link>
 		)
 	});
 }
