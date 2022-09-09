@@ -42,6 +42,7 @@ const Home = () => {
 
 <p>Graeter's is a local ice cream chain that is known for its delicious and unique flavors. The ice cream is made with fresh ingredients and hand-packed into pint-sized containers.</p>
 
+
 <h1>Our Culture</h1>
     <p>
       Cincinnati is known for its strong German heritage. The city is home to the world's second-largest Oktoberfest celebration and hosts a number of other German-themed events throughout the year. The city is also home to a number of museums and cultural institutions, including the Cincinnati Art Museum, the Cincinnati Museum Center, and the National Underground Railroad Freedom Center.
