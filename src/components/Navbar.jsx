@@ -51,7 +51,7 @@ const Navbar = () => {
 								onMouseOver={handleMouseOut}>Contact</Link>
 						</li>
 						<li className="nav-item">
-							<Link className="nav-link" to="/breweries"
+							<Link className="nav-link" to="/breweriesPage"
 								onMouseOver={handleMouseOut}>Breweries</Link>
 						</li>
 					</ul>

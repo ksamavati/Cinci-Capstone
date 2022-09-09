@@ -6,12 +6,13 @@ import Carousel from "react-bootstrap/Carousel";
 import '../css/Locations.css';
 import { motion } from 'framer-motion';
 
-const Locations = (props) => {
+const Category = (props) => {
 	const [locArr, setLocArr] = useState([]);
 	const { cat } = useParams();
 
 	// Runs once when compponent renders, equivalent to ComponentDidMount
 	useEffect(() => {
+		// If no category, load all locations
 		if (cat === "" || cat === undefined) {
 			axios.get('/locationsdb/')
 			.then(response => {
@@ -83,4 +84,4 @@ const Locations = (props) => {
 	)
 }
 
-export default Locations
+export default Category
