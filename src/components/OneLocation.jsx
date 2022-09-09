@@ -22,7 +22,6 @@ const OneLocation = () => {
 		.catch(() => console.log("Can’t access " + url + " response. Blocked by browser?"))
 
 
-
 		// var config = {
 		// 	method: 'get',
 		// 	url: 'https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=mongolian&inputtype=textquery&locationbias=circle%3A2000%4047.6918452%2C-122.2226413&fields=formatted_address%2Cname%2Crating%2Copening_hours%2Cgeometry&key=YOUR_API_KEY',
@@ -62,7 +61,7 @@ const OneLocation = () => {
 			<p>{loc.phone}</p>
 			<p>{loc.category}</p>
 			<p>{loc.description}</p>
-			<p>{mapsData.weekday_text}</p>
+			<p>{console.log(mapsData)}</p>
 			
 		</div>
 	)
