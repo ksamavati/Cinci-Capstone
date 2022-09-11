@@ -52,13 +52,6 @@ const Navbar = () => {
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
 			{/* <!-- .navbar --> */}
-
-			<li className="get-started-btn">
-							<Link className="nav-link" to="/locationstest"
-								onMouseOver={handleMouseOut}
-							>LocationsTest</Link>
-						</li>
-
     </div>
 		{isHovering && <Subnav />}
   </header>
