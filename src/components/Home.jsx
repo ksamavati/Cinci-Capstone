@@ -1,4 +1,5 @@
 import React from 'react';
+import { useLayoutEffect } from 'react';
 import '../css/Home.css';
 import bgvideo from '../assets/home/landingvideo.mp4';
 import movie from '../assets/home/videoplayback.mp4';
@@ -11,6 +12,10 @@ import CardGroup from 'react-bootstrap/CardGroup';
 console.log(bgvideo);
 
 const Home = () => {
+	useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+	});
+
 	return (
 		<div>
 		<section className="my-video-container" id="section1">

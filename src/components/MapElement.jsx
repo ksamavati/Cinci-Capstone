@@ -3,7 +3,7 @@ import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
 
 const containerStyle = {
   width: '100%',
-  height: '60vh'
+  height: '80vh'
 };
 
 const center = {
@@ -22,7 +22,7 @@ function MapElement() {
   const onLoad = React.useCallback(function callback(map) {
     const bounds = new window.google.maps.LatLngBounds(center);
     map.fitBounds(bounds);
-    setMap(map)
+    setMap(map);
   }, [])
 
   const onUnmount = React.useCallback(function callback(map) {
