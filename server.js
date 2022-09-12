@@ -1,5 +1,5 @@
 const express = require('express');
-// const cors = require('cors');
+const cors = require('cors');
 const mongoose = require('mongoose');
 // const fs = require('fs');
 const path = require('path');
@@ -9,9 +9,8 @@ const app = express();
 require('dotenv').config();
 
 const port = process.env.PORT || 5000;
-console.log(process.env.PORT);
 
-// app.use(cors());
+app.use(cors());
 app.use(express.json());
 
 const uri = 'mongodb+srv://user:1234@cluster0.fuypnaj.mongodb.net/database?retryWrites=true&w=majority';

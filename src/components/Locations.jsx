@@ -20,7 +20,7 @@ const Locations = () => {
 	return (
 		<div>
 			{/* <div className="row row-cols-2 row-cols-lg-5 row-cols-xl-6 g-4 justify-content-center"> */}
-			<div className="row justify-content-center">
+			<div className="row locations-row justify-content-center">
 				{/* {locationsJSX} */}
 				<LocationRenderer locationsArray={locArr} />
 			</div>

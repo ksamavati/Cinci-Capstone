@@ -412,7 +412,7 @@
 		"name": "Happy 2 Brewing Company",
 		"address1": "8298 Clough Pike",
 		"address2": "Cincinnati, OH 45244",
-		"phone": "",
+		"phone": "(513) 706-7416",
 		"category": "breweries",
 		"description": "Happy 2 Brewing Company is a nano brewery located inside Mio's pizza in Anderson. The vision of H2BC is focused on beer education, charitable involvement, and community gathering.",
 		"image": "https://i.imgur.com/bW77iD7.jpg"
@@ -423,7 +423,7 @@
 		"name": "HighGrain Brewing Company",
 		"address1": "6860 Plainfield Road",
 		"address2": "Cincinnati, Ohio 45236",
-		"phone": "",
+		"phone": "(513) 706-9999",
 		"category": "breweries",
 		"description": "HighGrain Brewing Company strives for high quality and sustainability. From the quality of their beer, tastefulness of their full menu, or decrease in carbon footprint from geo-thermal and wind energy…this brewery is made to last.",
 		"image": "https://i.imgur.com/9cxGvjI.jpg"
@@ -434,7 +434,7 @@
 		"name": "Humble Monk Brewing Co.",
 		"address1": "1641 Blue Rock Rd",
 		"address2": "Cincinnati, Ohio 45223",
-		"phone": "",
+		"phone": "(513) 906-3016",
 		"category": "breweries",
 		"description": "Humble Monk Brewing Co. is a homegrown brewery that specializes in high quality craft beer with a Belgian influence. Now open in Northside, come check us out!",
 		"image": "https://i.imgur.com/rf0A1lj.jpg"
@@ -445,7 +445,7 @@
 		"name": "Listermann Brewing Company",
 		"address1": "1621 Dana Ave",
 		"address2": "Cincinnati, Ohio 45207",
-		"phone": "",
+		"phone": "(513) 096-3316",
 		"category": "breweries",
 		"description": "What started out as a love for home brewing turned into a passion. Listermann Brewing is not only an iconic brewery in Cincinnati, its owner first began the business designing parts for home brewers. The beers are edgy, flavorful, and have won several awards at the Great American Brewery Festival.",
 		"image": "https://i.imgur.com/2KcM0gf.jpg"
@@ -456,7 +456,7 @@
 		"name": "Little Miami Brewing Company",
 		"address1": "208 Mill St",
 		"address2": "Milford, Ohio 45150",
-		"phone": "",
+		"phone": "(513) 476-9416",
 		"category": "breweries",
 		"description": "This family run craft brewery sits on the edge of the Little Miami River. Little Miami Brewing offers a great selection of beers for all tastes. And it is in close proximity to a bike trail and canoe/kayak portage.",
 		"image": "https://i.imgur.com/hAmakAX.jpg"
@@ -467,7 +467,7 @@
 		"name": "Moerlein Lager House",
 		"address1": "115 Joe Nuxhall Way",
 		"address2": "Cincinnati, OH 45202",
-		"phone": "",
+		"phone": "(513) 906-9476",
 		"category": "breweries",
 		"description": "Moerlein Lager House is located downtown, adjacent to Smale Riverfront Park. It sits between the Reds and Bengals stadium along the banks of the Ohio River. This micro-brewery produces a full line of Christian Moerlein brews. The Lager House restaurant offers a large menu of main entrees, outdoor seating, and an expansive side porch area.",
 		"image": "https://i.imgur.com/ue7zYah.jpg"
@@ -478,7 +478,7 @@
 		"name": "Narrow Path Brewing Co.",
 		"address1": "106 Karl Brown Way",
 		"address2": "Loveland, OH 45140",
-		"phone": "",
+		"phone": "(513) 907-9016",
 		"category": "breweries",
 		"description": "Located on the Loveland bike trail, Narrow Path Brewing has ample space inside and out to enjoy a craft beer. The draft list boasts many different varieties along with some experimental brews. A great local hangout.",
 		"image": "https://i.imgur.com/dcRWngP.jpg"
@@ -489,7 +489,7 @@
 		"name": "Northern Row Brewery and Distillery",
 		"address1": "111 West McMicken Avenue",
 		"address2": "Cincinnati, Ohio 45202",
-		"phone": "",
+		"phone": "(513) 796-9416",
 		"category": "breweries",
 		"description": "Located in the historic Over-the-Rhine Brewery District, Northern Row Brewery and Distillery is in a historic pre-prohibition building constructed in 1895. Northern Row is a craft brewery and distillery located in the original Christian Moerlein Lager house in the heart of OTR in Cincinnati, OH.",
 		"image": "https://i.imgur.com/rf0A1lj.jpg"
@@ -500,7 +500,7 @@
 		"name": "Rivertown Brewery",
 		"address1": "6550 Hamilton Lebanon Rd",
 		"address2": "Middletown, OH 45044",
-		"phone": "",
+		"phone": "(513) 567-2020",
 		"category": "breweries",
 		"description": "Located in Monroe, Rivertown Brewery has a taproom with 30 taps, cocktails, wine and soda. They have a great BBQ-centric menu and even offer a kids' menu as well as lunch.",
 		"image": "https://i.imgur.com/6S3JgA2.jpg"
@@ -511,7 +511,7 @@
 		"name": "Sonder Brewing",
 		"address1": "8584 Duke Blvd",
 		"address2": "Mason, Ohio 45040",
-		"phone": "",
+		"phone": "(513) 706-0016",
 		"category": "breweries",
 		"description": "Located in Mason, Sonder Brewing is a 30-barrel brew house with a 2,000 square foot taproom. BrewRiver Kitchen (located in the taproom) serves food daily. They have a covered side patio and some outdoor space as well.",
 		"image": "https://i.imgur.com/9H9n15C.jpg"
@@ -522,7 +522,7 @@
 		"name": "Homemaker's Bar",
 		"address1": "39 E. 13th St.",
 		"address2": "Over-the-Rhine",
-		"phone": "",
+		"phone": "(513) 900-2223",
 		"category": "bars",
 		"description": "Cincinnati hospitality mavens Julia Petiprin and Catherine Manabat opened Homemakers Bar at the corner of 13th and Walnut streets in Over-the-Rhine. The duo created a space inspired by a retro vibe and the domestic cocktails of the 1950s through the 1970s. Outside, the bar welcomes folks to sip on cocktails in its string-lit Outpost.",
 		"image": "https://i.imgur.com/heP2H5F.jpg"
@@ -533,7 +533,7 @@
 		"name": "Dug Out Bar",
 		"address1": "9000 Reading Road",
 		"address2": "Reading",
-		"phone": "",
+		"phone": "(513) 376-7716",
 		"category": "bars",
 		"description": "This American Legion bar has been around since 1919, but opened up to non-members roughly six years ago. However, last spring — right before the pandemic hit locally — the almost-century-old bar reopened with a top-to-bottom revamp. Dubbed Dug Out Bar, the destination is well-known for having the \"coldest and cheapest beer in town,\" with brews priced at a meager $2.25. The bar features \"raffle machines,\" as well as pool and shuffleboard tables.",
 		"image": "https://i.imgur.com/5WBN2Nb.jpg"
@@ -544,7 +544,7 @@
 		"name": "Wiseguy Lounge",
 		"address1": "6099 Montgomery Road",
 		"address2": "Pleasant Ridge",
-		"phone": "",
+		"phone": "(513) 996-9916",
 		"category": "bars",
 		"description": "While inspired by Prohibition and its associated speakeasies, this lounge nestled above Pleasant Ridge's Goodfellas Pizzeria doesn't require a secret password. Instead, just walk up the stairs and order one of the more than 250 bourbons, hand-crafted cocktails or wide variety of beers from your knowledgeable bartender. This is the third Greater Cincinnati location for the pizza/bourbon bar combo.",
 		"image": "https://i.imgur.com/Wgj3Mty.jpg"
@@ -566,7 +566,7 @@
 		"name": "Nostalgia Wine & Jazz Lounge",
 		"address1": "1432 Vine Street",
 		"address2": "Cincinnati, OH 45202",
-		"phone": "",
+		"phone": "(513) 888-3999",
 		"category": "bars",
 		"description": "Nostalgia is an intimate jazz lounge, wine bar located in the heart of OTR, offering over 40 wines by the glass and/or bottle (eight of which are on tap!) with a focus on highlighting women & minority winemakers and producers.",
 		"image": "https://i.imgur.com/ZAw5m2J.jpg"
@@ -577,7 +577,7 @@
 		"name": "Japp's Since 1879",
 		"address1": "1134 Main Street",
 		"address2": "Cincinnati, OH 45202",
-		"phone": "",
+		"phone": "(513) 706-6874",
 		"category": "bars",
 		"description": "Features classic and innovative new craft cocktails, homemade ingredients, coffee beverages and bottled craft beers. Streetcar Stop #6: Hanke Exchange Station, 12th & Main",
 		"image": "https://i.imgur.com/gabkhFB.jpg"
