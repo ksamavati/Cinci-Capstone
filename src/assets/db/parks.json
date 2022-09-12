@@ -34,7 +34,8 @@
 		},
 		"phone": "+15132411774",
 		"display_phone": "(513) 241-1774",
-		"distance": 3726.8757404680673
+		"distance": 3726.8757404680673,
+		"description": "This 40-acre park offers breathtaking views of the Ohio River and the Cincinnati skyline. Visitors can stroll along the park's paths, relax on one of the many benches, or take a ride on the park's carousel. The park also features a playground, a fountain, and a café."
 	},
 	{
 		"id": "hABMMh6YQVp7M0yNwYyxuw",
@@ -75,7 +76,8 @@
 		},
 		"phone": "+15133572619",
 		"display_phone": "(513) 357-2619",
-		"distance": 7935.786051269334
+		"distance": 7935.786051269334,
+		"description": "Ault Park is a beautiful 300-acre park that features a variety of amenities, including a playground, a pavilion, hiking trails, and a dog park. The park also hosts a variety of events throughout the year, such as the Cincinnati Flower Show and the Ault Park Concours d'Elegance."
 	},
 	{
 		"id": "WGcx--JF0h0AH_ZzqVTFXA",
@@ -112,7 +114,8 @@
 		},
 		"phone": "+18592922151",
 		"display_phone": "(859) 292-2151",
-		"distance": 5254.11897379931
+		"distance": 5254.11897379931,
+		"description": "Devou Park is a 722-acre park located in the hills of Northern Kentucky. The park offers a variety of activities, including hiking, biking, picnicking, and fishing. The park also features a golf course, a disc golf course, and a playground."
 	},
 	{
 		"id": "8zfx-A1gvJbbbXNYHbh9aQ",
@@ -149,7 +152,8 @@
 		},
 		"phone": "+15136214400",
 		"display_phone": "(513) 621-4400",
-		"distance": 2124.357892368122
+		"distance": 2124.357892368122,
+		"description": "Washington Park is a 12-acre park located in the heart of downtown Cincinnati. The park features a playground, a sprayground, a dog park, and a variety of events throughout the year, such as concerts and festivals."
 	},
 	{
 		"id": "lq4tXDHBgiDJf9RIs7qc_w",
@@ -186,7 +190,8 @@
 		},
 		"phone": "+15137317894",
 		"display_phone": "(513) 731-7894",
-		"distance": 8924.94940245349
+		"distance": 8924.94940245349,
+		"description": ""
 	},
 	{
 		"id": "nx1bWJPSeZ49-BM79SYIIw",
@@ -223,7 +228,8 @@
 		},
 		"phone": "+15136861270",
 		"display_phone": "(513) 686-1270",
-		"distance": 16023.535181330893
+		"distance": 16023.535181330893,
+		"description": ""
 	},
 	{
 		"id": "kc9s1Yw6urwcl8RQeLseQw",
@@ -260,7 +266,8 @@
 		},
 		"phone": "",
 		"display_phone": "",
-		"distance": 2390.5215716560406
+		"distance": 2390.5215716560406,
+		"description": ""
 	},
 	{
 		"id": "ZR_10wVlQ2RmihiaPEKJtw",
@@ -297,7 +304,8 @@
 		},
 		"phone": "+15135217275",
 		"display_phone": "(513) 521-7275",
-		"distance": 14517.253729267859
+		"distance": 14517.253729267859,
+		"description": ""
 	},
 	{
 		"id": "EmF03Elr8epb26_Fhtrekg",
@@ -342,7 +350,8 @@
 		},
 		"phone": "+18593843522",
 		"display_phone": "(859) 384-3522",
-		"distance": 33646.95804362105
+		"distance": 33646.95804362105,
+		"description": ""
 	},
 	{
 		"id": "VW56_ZqQChOiEeOQELdkmg",
@@ -379,7 +388,8 @@
 		},
 		"phone": "+15136888400",
 		"display_phone": "(513) 688-8400",
-		"distance": 12350.547356546836
+		"distance": 12350.547356546836,
+		"description": ""
 	},
 	{
 		"id": "2vdcwUF_z0l4VPn_nz1izw",
@@ -424,7 +434,8 @@
 		},
 		"phone": "+15135217275",
 		"display_phone": "(513) 521-7275",
-		"distance": 18304.77137197523
+		"distance": 18304.77137197523,
+		"description": ""
 	},
 	{
 		"id": "cWsbouKIb7ZmzXHBq-Z1QQ",
@@ -465,7 +476,8 @@
 		},
 		"phone": "",
 		"display_phone": "",
-		"distance": 8244.21190542411
+		"distance": 8244.21190542411,
+		"description": ""
 	},
 	{
 		"id": "btnv_Ax9f_H-wPPDWwfpTA",
@@ -506,7 +518,8 @@
 		},
 		"phone": "+18593844999",
 		"display_phone": "(859) 384-4999",
-		"distance": 25981.23175297823
+		"distance": 25981.23175297823,
+		"description": ""
 	},
 	{
 		"id": "dc_TzllBIrOz90OH9NjBAA",
@@ -551,7 +564,8 @@
 		},
 		"phone": "+18594414226",
 		"display_phone": "(859) 441-4226",
-		"distance": 8563.107054188667
+		"distance": 8563.107054188667,
+		"description": ""
 	},
 	{
 		"id": "yCG5AgRq-Ggn3sVzhl-JpA",
@@ -592,7 +606,8 @@
 		},
 		"phone": "+15135217275",
 		"display_phone": "(513) 521-7275",
-		"distance": 14340.263821158695
+		"distance": 14340.263821158695,
+		"description": ""
 	},
 	{
 		"id": "J3cwOtd8_SUIuytSj1DSQQ",
@@ -637,7 +652,8 @@
 		},
 		"phone": "+15137928348",
 		"display_phone": "(513) 792-8348",
-		"distance": 22141.153239907493
+		"distance": 22141.153239907493,
+		"description": ""
 	},
 	{
 		"id": "kBkmDSKkdPpy6tcz_L09jg",
@@ -674,7 +690,8 @@
 		},
 		"phone": "+18594267777",
 		"display_phone": "(859) 426-7777",
-		"distance": 13624.972815052295
+		"distance": 13624.972815052295,
+		"description": ""
 	},
 	{
 		"id": "JNEq6ETfufVm-7ktlc7g0g",
@@ -711,7 +728,8 @@
 		},
 		"phone": "",
 		"display_phone": "",
-		"distance": 14943.120399931178
+		"distance": 14943.120399931178,
+		"description": ""
 	},
 	{
 		"id": "8ws2nbamPZyuJYPJugJmFQ",
@@ -752,7 +770,8 @@
 		},
 		"phone": "",
 		"display_phone": "",
-		"distance": 13387.31415661096
+		"distance": 13387.31415661096,
+		"description": ""
 	},
 	{
 		"id": "a9uIri9FTmtKJwib89t5oA",
@@ -789,6 +808,7 @@
 		},
 		"phone": "",
 		"display_phone": "",
-		"distance": 8997.96099068758
+		"distance": 8997.96099068758,
+		"description": ""
 	}
 ]

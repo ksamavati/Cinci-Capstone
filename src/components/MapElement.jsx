@@ -3,8 +3,11 @@ import { GoogleMap, useJsApiLoader, Marker, useGoogleMap } from '@react-google-m
 import axios from 'axios';
 
 const containerStyle = {
-  width: '100%',
-  height: '90vh'
+	position: 'absolute',
+	top: '73px',
+	right: '0px',
+	bottom: '0px',
+	left: '0px',
 };
 
 const center = {

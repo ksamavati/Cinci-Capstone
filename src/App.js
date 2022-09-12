@@ -8,21 +8,25 @@ import LocationsTest from './components/LocationsTest';
 import OneLocation from './components/OneLocation';
 import Contact from './components/Contact';
 import Boxes from './components/Boxes';
-import {Routes, Route} from 'react-router-dom';
+import {Routes, Route, useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 
 
 function App() {
 	const [renderFooter, setRenderFooter] = useState(true);
+	const location = useLocation();
 
 	useEffect(() => {
-		if (window.location.pathname == './map') {
+		if (location.pathname == './map' || location.pathname == '/map') {
+			if (renderFooter === true) {
 			setRenderFooter(false);
+			}
 		} else {
+			if (renderFooter === false) {
 			setRenderFooter(true);
-			
+			}
 		}
-	}, [window.location.pathname]);
+	}, [location.pathname]);
 
   return (
     <div className="App">
@@ -41,7 +45,6 @@ function App() {
 					<Route path="/:cat" element={<Category />} />
 				</Routes>
 			</main>
-			{console.log(window.location.pathname)}
 			{renderFooter && <Footer />}
 			{/* <Footer /> */}
     </div>
