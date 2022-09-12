@@ -1,4 +1,8 @@
 /* This is the main CSS file for the app */
 body {
-	background: #D0D8DB;
+	background: #f00;
+}
+
+.nav-offset {
+	height: 73px;
 }

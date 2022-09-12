@@ -70,4 +70,14 @@
 .my-car-img {
 	transform: translateY(-26%);
 	filter: brightness(55%);
+	min-width: 100%;
+	min-height: 135%;
+	object-fit: cover;
+}
+
+.my-car-caption {
+	-webkit-line-clamp: 2;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
 }

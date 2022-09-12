@@ -1,24 +1,27 @@
-import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import React, { useEffect, useState, useLayoutEffect } from 'react';
+import { useParams, Link } from 'react-router-dom';
 import axios from 'axios';
 import LocationRenderer from './LocationRenderer';
 import Carousel from "react-bootstrap/Carousel";
 import '../css/Locations.css';
 import { motion } from 'framer-motion';
-import localdb from '../assets/db.json';
 
 const Category = (props) => {
 	const [locArr, setLocArr] = useState([]);
 	const { cat } = useParams();
 	const carouselLocations = [];
 
+	// Scroll to top of page on page load
+	useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+	});
+
+
 	// Runs once when compponent renders, and again when you toggle category
 	useEffect(() => {
 		// if running on Heroku, do a backend call
-		console.log(process.env.NODE_ENV);
 		if (process.env.NODE_ENV === 'development') {
 			if (cat === "" || cat === undefined) {
-				// setLocArr(localdb);
 				axios.get('https://discovercincinnati.herokuapp.com/locationsdb/')
 				.then(response => {
 					setLocArr(response.data);
@@ -56,6 +59,8 @@ const Category = (props) => {
 			});
 		}
 		}
+
+		window.scrollTo(0, 0)
 	}, [cat]);
 
 	// Runs when locArr gets updated
@@ -75,8 +80,8 @@ const Category = (props) => {
 			/>
 			<Carousel.Caption>
 				<h3>{location.name}</h3>
-				<p>{location.description}</p>
-				<p><a className="btn btn-primary" href="#" role="button">Learn More &raquo;</a></p>
+				<p className='my-car-caption'>{location.description}</p>
+				<p><Link className="btn btn-primary" to={"/destination-" + location.id} state={{ loc: location }}>Learn More &raquo;</Link></p>
 			</Carousel.Caption>
 		</Carousel.Item>
 		)

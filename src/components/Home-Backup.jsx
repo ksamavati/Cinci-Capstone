@@ -1,12 +1,8 @@
 import React, { useLayoutEffect } from 'react';
 import '../css/Home.css';
 import bgvideo from '../assets/home/landingvideo.mp4';
-import movie from '../assets/home/videoplayback.mp4';
-import '../css/Home2.css';
-import Button2 from 'react-bootstrap/Button';
-import Card2 from 'react-bootstrap/Card';
- import { Card, CardImg, CardText, CardBody,
-  CardTitle, CardSubtitle, Button, Row, Col, Container} from 'reactstrap';
+import '../css/Home copy.css';
+
 
 console.log(bgvideo);
 
@@ -17,17 +13,16 @@ const Home = () => {
 
 	return (
 		<div>
-		  <section className="my-video-container" id="section1">
-      {/* <video className="my-fullscreen-video my-background" src={movie} muted loop autoPlay></video> */}
+		<section className="my-video-container" id="section1">
     		<video className="my-fullscreen-video my-background" src={bgvideo} muted loop autoPlay></video>
 				<h1 className="text-white my-tagline">Welcome to Cincinnati
-			  </h1>
+			</h1>
   		</section>
-	    {/* <!-- End Hero --> */}
+	{/* <!-- End Hero --> */}
 
-      <main id="main">
+  <main id="main">
 
-      {/* <!-- ======= About Section ======= --> */}
+    {/* <!-- ======= About Section ======= --> */}
     <section id="about" className="about">
       <div className="container" data-aos="fade-up">
 
@@ -76,18 +71,18 @@ const Home = () => {
           </div>
 
           <div className="col-lg-3 col-6 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="80" data-purecounter-duration="1" className="purecounter"></span>
-            <p>Breweries</p>
+            <span data-purecounter-start="0" data-purecounter-end="64" data-purecounter-duration="1" className="purecounter"></span>
+            <p>Courses</p>
           </div>
 
           <div className="col-lg-3 col-6 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="1788" data-purecounter-duration="1" className="purecounter"></span>
-            <p>Year Founded</p>
+            <span data-purecounter-start="0" data-purecounter-end="42" data-purecounter-duration="1" className="purecounter"></span>
+            <p>Events</p>
           </div>
 
           <div className="col-lg-3 col-6 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="80327" data-purecounter-duration="1" className="purecounter"></span>
-            <p>Jobs</p>
+            <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" className="purecounter"></span>
+            <p>Trainers</p>
           </div>
 
         </div>
@@ -96,133 +91,56 @@ const Home = () => {
     </section>
 		{/* <!-- End Counts Section --> */}
 
-            <section>
-           <div className='App'>
-           <Container>
-           <Button variant="secondary"><h1>Things to Do</h1></Button>{' '}
-           <Row>
-           <Col md={4}>
-           <Card>
-        <CardImg top width="100%" src="assets/img/attracts.jpg" alt="Card image cap" />
-        <CardBody>
-          <CardTitle>Attractions</CardTitle>
-          <CardSubtitle>Musuem</CardSubtitle>
-          <CardText>Cincinnati is home to many tourist attractions, including the Cincinnati Zoo, the National Underground Railroad Freedom Center, and the Cincinnati Museum Center.</CardText>
-          <Button>Button</Button>
-        </CardBody>
-      </Card>
-      </Col>
-
-      <Col md={4}>
-           <Card>
-        <CardImg top width="100%" src="assets/img/sport.jpeg" alt="Card image cap" />
-        <CardBody>
-          <CardTitle>Sports</CardTitle>
-          <CardSubtitle>Stadium</CardSubtitle>
-          <CardText>Cincinnati is home to many professional sports teams, including the Bengals (NFL), Reds (MLB), and FC Cincinnati (MLS). The city also has a rich history in college sports.</CardText>
-          <Button>Button</Button>
-        </CardBody>
-      </Card>
-      </Col>
-
-      <Col md={4}>
-           <Card>
-        <CardImg top width="100%" src="assets/img/bar.jpg" alt="Card image cap" />
-        <CardBody>
-          <CardTitle>Bars</CardTitle>
-          <CardSubtitle>Club</CardSubtitle>
-          <CardText>Some popular bars in Cincinnati include The Anchor, The Comet, and The Lackman. These bars offer a variety of beer, wine, and mixed drinks, as well as a variety of food options.</CardText>
-          <Button>Button</Button>
-        </CardBody>
-      </Card>
-      </Col>
-
-      <Col md={4}>
-           <Card>
-        <CardImg top width="100%" src="assets/img/brew.jpg" alt="Card image cap" />
-        <CardBody>
-          <CardTitle>Breweries</CardTitle>
-          <CardSubtitle>Beer spot</CardSubtitle>
-          <CardText>There are many Cincinnati breweries, but some of the most popular include Rhinegeist, MadTree, and Fifty West. These breweries offer a variety of different beers.</CardText>
-          <Button>Button</Button>
-        </CardBody>
-      </Card>
-      </Col>
-      <Col md={4}>
-           <Card>
-        <CardImg top width="100%" src="assets/img/art.jpg" alt="Card image cap" />
-        <CardBody>
-          <CardTitle>Performing Arts & Music</CardTitle>
-          <CardSubtitle>Theater</CardSubtitle>
-          <CardText>Cincinnati has a long and rich history in the performing arts, dating back to the city's founding in 1788. The city is home to a number of world-renowned performing arts organizations. </CardText>
-          <Button>Button</Button>
-        </CardBody>
-      </Card>
-      </Col>
-      <Col md={4}>
-           <Card>
-        <CardImg top width="100%" src="assets/img/attract.jpeg" alt="Card image cap" />
-        <CardBody>
-          <CardTitle>Parks and Recreation</CardTitle>
-          <CardSubtitle>Card subtitle</CardSubtitle>
-          <CardText>Cincinnati has a variety of parks and recreational facilities for residents and visitors to enjoy. The city operates over 60 parks, totaling more than 4,000 acres.</CardText>
-          <Button>Button</Button>
-        </CardBody>
-      </Card>
-      </Col>
-      </Row>
-      </Container>
-           </div>
-          {/* <video className="" src={movie} muted loop autoPlay></video> */}
-          </section>
     {/* <!-- ======= Why Us Section ======= --> */}
-   
-    <section id="why-us" class="why-us">
-      <div class="container" data-aos="fade-up">
+    <section id="why-us" className="why-us">
+      <div className="container" data-aos="fade-up">
 
-        <div class="row">
-          <div class="col-lg-4 d-flex align-items-stretch">
-            <div class="content">
-              <h3>Why Visit Cincinnati?</h3>
+        <div className="row">
+          <div className="col-lg-4 d-flex align-items-stretch">
+            <div className="content">
+              <h3>Why Choose Mentor?</h3>
               <p>
-              Cincinnati is a great city with a lot to offer. The people are friendly and there is always something to do. The city has a great history and there are plenty of places to visit. The food is amazing and there is a great variety of restaurants. The city is also home to a great music scene. There are many reasons to visit Cincinnati, but these are just a few of the reasons why you should experience Cincinnati for yourself.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+                Asperiores dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus optio ad corporis.
               </p>
-              <div class="text-center">
-                <a href="about.html" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
+              <div className="text-center">
+                <a href="about.html" className="more-btn">Learn More <i className="bx bx-chevron-right"></i></a>
               </div>
             </div>
           </div>
-          <div class="col-lg-8 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-boxes d-flex flex-column justify-content-center">
-              <div class="row">
-                <div class="col-xl-4 d-flex align-items-stretch">
-                  <div class="icon-box mt-4 mt-xl-0">
-                    <i class="bx bx-beer"></i>
-                    <h4>Breweries</h4>
-                    <p>The city has a rich brewing history, and there are a number of new and exciting breweries to check out.</p>
+          <div className="col-lg-8 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div className="icon-boxes d-flex flex-column justify-content-center">
+              <div className="row">
+                <div className="col-xl-4 d-flex align-items-stretch">
+                  <div className="icon-box mt-4 mt-xl-0">
+                    <i className="bx bx-receipt"></i>
+                    <h4>Corporis voluptates sit</h4>
+                    <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
                   </div>
                 </div>
-                <div class="col-xl-4 d-flex align-items-stretch">
-                  <div class="icon-box mt-4 mt-xl-0">
-                    <i class="bx bx-football"></i>
-                    <h4>Sports</h4>
-                    <p>Sports fans in Cincinnati are passionate about their teams and the city has a rich history of success in both professional and collegiate sports.</p>
+                <div className="col-xl-4 d-flex align-items-stretch">
+                  <div className="icon-box mt-4 mt-xl-0">
+                    <i className="bx bx-cube-alt"></i>
+                    <h4>Ullamco laboris ladore pan</h4>
+                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
                   </div>
                 </div>
-                <div class="col-xl-4 d-flex align-items-stretch">`
-                  <div class="icon-box mt-4 mt-xl-0">
-                    <i class="bx bx-food-menu"></i>
-                    <h4>Food</h4>
-                    <p>The city has a rich food culture with a variety of cuisines to choose from. Cincinnati is also home to many great restaurants and food trucks.</p>
+                <div className="col-xl-4 d-flex align-items-stretch">
+                  <div className="icon-box mt-4 mt-xl-0">
+                    <i className="bx bx-images"></i>
+                    <h4>Labore consequatur</h4>
+                    <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
                   </div>
                 </div>
               </div>
             </div>
+						{/* <!-- End .content--> */}
           </div>
         </div>
 
       </div>
     </section>
+		{/* <!-- End Why Us Section --> */}
 
     {/* <!-- ======= Features Section ======= --> */}
     <section id="features" className="features">
@@ -231,38 +149,74 @@ const Home = () => {
         <div className="row" data-aos="zoom-in" data-aos-delay="100">
           <div className="col-lg-3 col-md-4">
             <div className="icon-box">
-              <i className="ri-star-line" style={{color: "#ffbb2c"}}></i>
-              <h3><a href="">Attractions</a></h3>
+              <i className="ri-store-line" style={{color: "#ffbb2c"}}></i>
+              <h3><a href="">Lorem Ipsum</a></h3>
             </div>
           </div>
           <div className="col-lg-3 col-md-4 mt-4 mt-md-0">
             <div className="icon-box">
-              <i className="ri-football-line" style={{color: "#5578ff"}}></i>
-              <h3><a href="">Sports</a></h3>
+              <i className="ri-bar-chart-box-line" style={{color: "#5578ff"}}></i>
+              <h3><a href="">Dolor Sitema</a></h3>
             </div>
           </div>
           <div className="col-lg-3 col-md-4 mt-4 mt-md-0">
             <div className="icon-box">
-              <i className="ri-goblet-fill" style={{color: "#e80368"}}></i>
-              <h3><a href="">Bars</a></h3>
+              <i className="ri-calendar-todo-line" style={{color: "#e80368"}}></i>
+              <h3><a href="">Sed perspiciatis</a></h3>
             </div>
           </div>
           <div className="col-lg-3 col-md-4 mt-4 mt-lg-0">
             <div className="icon-box">
-              <i className="ri-cup-fill" style={{color: "#e361ff"}}></i>
-              <h3><a href="">Breweries</a></h3>
+              <i className="ri-paint-brush-line" style={{color: "#e361ff"}}></i>
+              <h3><a href="">Magni Dolores</a></h3>
             </div>
           </div>
           <div className="col-lg-3 col-md-4 mt-4">
             <div className="icon-box">
-              <i className="ri-file-music-fill" style={{color: "#47aeff"}}></i>
-              <h3><a href="">Performing Arts & Music</a></h3>
+              <i className="ri-database-2-line" style={{color: "#47aeff"}}></i>
+              <h3><a href="">Nemo Enim</a></h3>
             </div>
           </div>
           <div className="col-lg-3 col-md-4 mt-4">
             <div className="icon-box">
-              <i className="ri-walk-fill" style={{color: "#ffa76e"}}></i>
-              <h3><a href="">Parks and Recreation</a></h3>
+              <i className="ri-gradienter-line" style={{color: "#ffa76e"}}></i>
+              <h3><a href="">Eiusmod Tempor</a></h3>
+            </div>
+          </div>
+          <div className="col-lg-3 col-md-4 mt-4">
+            <div className="icon-box">
+              <i className="ri-file-list-3-line" style={{color: "#11dbcf"}}></i>
+              <h3><a href="">Midela Teren</a></h3>
+            </div>
+          </div>
+          <div className="col-lg-3 col-md-4 mt-4">
+            <div className="icon-box">
+              <i className="ri-price-tag-2-line" style={{color: "#4233ff"}}></i>
+              <h3><a href="">Pira Neve</a></h3>
+            </div>
+          </div>
+          <div className="col-lg-3 col-md-4 mt-4">
+            <div className="icon-box">
+              <i className="ri-anchor-line" style={{color: "#b2904f"}}></i>
+              <h3><a href="">Dirada Pack</a></h3>
+            </div>
+          </div>
+          <div className="col-lg-3 col-md-4 mt-4">
+            <div className="icon-box">
+              <i className="ri-disc-line" style={{color: "#b20969"}}></i>
+              <h3><a href="">Moton Ideal</a></h3>
+            </div>
+          </div>
+          <div className="col-lg-3 col-md-4 mt-4">
+            <div className="icon-box">
+              <i className="ri-base-station-line" style={{color: "#ff5828"}}></i>
+              <h3><a href="">Verdo Park</a></h3>
+            </div>
+          </div>
+          <div className="col-lg-3 col-md-4 mt-4">
+            <div className="icon-box">
+              <i className="ri-fingerprint-line" style={{color: "#29cc61"}}></i>
+              <h3><a href="">Flavor Nivelanda</a></h3>
             </div>
           </div>
         </div>
@@ -272,7 +226,7 @@ const Home = () => {
 		{/* <!-- End Features Section --> */}
 
     {/* <!-- ======= Popular Courses Section ======= --> */}
-    {/* <section id="popular-courses" className="courses">
+    <section id="popular-courses" className="courses">
       <div className="container" data-aos="fade-up">
 
         <div className="section-title">
@@ -307,7 +261,7 @@ const Home = () => {
               </div>
             </div>
           </div> 
-					
+					{/* <!-- End Course Item--> */}
 
           <div className="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
             <div className="course-item">
@@ -334,7 +288,7 @@ const Home = () => {
               </div>
             </div>
           </div> 
-				
+					{/* <!-- End Course Item--> */}
 
           <div className="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
             <div className="course-item">
@@ -361,16 +315,16 @@ const Home = () => {
               </div>
             </div>
           </div> 
-				
+					{/* <!-- End Course Item--> */}
 
         </div>
 
       </div>
-    </section> */}
+    </section>
 		{/* <!-- End Popular Courses Section --> */}
 
     {/* <!-- ======= Trainers Section ======= --> */}
-    {/* <section id="trainers" className="trainers">
+    <section id="trainers" className="trainers">
       <div className="container" data-aos="fade-up">
 
         <div className="row" data-aos="zoom-in" data-aos-delay="100">
@@ -434,19 +388,9 @@ const Home = () => {
         </div>
 
       </div>
-    </section> */}
+    </section>
 		{/* <!-- End Trainers Section --> */}
-<section>
-<div>
-<Container>
-  <h1>Excited? Plan Your Trip With Us!</h1>
-  <div className="col-md-6 order-1 order-md-2" data-aos="fade-left" data-aos-delay="100">
-            <img src="assets/img/travel.jpg" className="img-fluid" alt="" />
-          </div>
-  <Button variant=""><Card2.Link href="https://reservations.cincinnatiusa.com/hotel/list/4872/m2441?Search%5BhotelRegion%5D=m2441&Search%5BcheckInDate%5D=&Search%5BcheckOutDate%5D=&Search%5BnumberOfRooms%5D=1&Search%5BnumberOfAdults%5D=1&Search%5BnumberOfChildren%5D=0&Search%5BkeywordSearch%5D=&Search%5Bsort%5D=rank&Search%5BstarRating%5D=&Search%5BlowPrice%5D=&Search%5BhighPrice%5D=&customNavLink=0&Search%5Bnear%5D=&Search%5Blatitude%5D=&Search%5Blongitude%5D=&Search%5BlocationSearch%5D=Downtown&Search%5BpoiDistance%5D="><h3>Book Now</h3></Card2.Link></Button>
-</Container>
-</div>
-</section>
+
   </main>
 	{/* <!-- End #main --> */}
 
@@ -458,19 +402,13 @@ const Home = () => {
         <div className="row">
 
           <div className="col-lg-3 col-md-6 footer-contact">
-            <h3>Contact Info</h3>
+            <h3>Mentor</h3>
             <p>
-             <p>City of Cincinnati</p>
-      <p>8th Floor, Room 803</p>
-      <p>801 Plum Street</p>
-      <p>Cincinnati, Ohio 45202</p>
-      <p><strong>Phone:</strong> (513) 352-3120</p>
-      <strong>Email:</strong> ouremail@gmail.com<br />
-      <p>Monday - Friday, 8 a.m. - 5 p.m.</p>
-      <a href="https://www.cincinnati-oh.gov/">Cincinnati-oh.gov</a><br />
-              {/* A108 Adam Street <br />
+              A108 Adam Street <br />
               New York, NY 535022<br />
-              United States <br /><br /> */}
+              United States <br /><br />
+              <strong>Phone:</strong> +1 5589 55488 55<br />
+              <strong>Email:</strong> info@example.com<br />
             </p>
           </div>
 
@@ -478,14 +416,14 @@ const Home = () => {
             <h4>Useful Links</h4>
             <ul>
               <li><i className="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i className="bx bx-chevron-right"></i> <a href="#">Locations</a></li>
-              <li><i className="bx bx-chevron-right"></i> <a href="#">Map</a></li>
-              <li><i className="bx bx-chevron-right"></i> <a href="#">Privacy Policy</a></li>
-              <li><i className="bx bx-chevron-right"></i> <a href="#">Terms Of Use</a></li>
+              <li><i className="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i className="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i className="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i className="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
             </ul>
           </div>
 
-          {/* <div className="col-lg-3 col-md-6 footer-links">
+          <div className="col-lg-3 col-md-6 footer-links">
             <h4>Our Services</h4>
             <ul>
               <li><i className="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
@@ -494,7 +432,7 @@ const Home = () => {
               <li><i className="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
               <li><i className="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
             </ul>
-          </div> */}
+          </div>
 
           <div className="col-lg-4 col-md-6 footer-newsletter">
             <h4>Join Our Newsletter</h4>
