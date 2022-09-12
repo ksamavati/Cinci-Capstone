@@ -29,6 +29,7 @@
 	display: -webkit-box;
 	-webkit-box-orient: vertical;
 	overflow: hidden;
+	font-size: 14pt;
 }
 
 .para-cols {
@@ -79,9 +80,9 @@
 
 .para-back {
 	background: #cedce7;
-	background: -webkit-linear-gradient(45deg, #cedce7 0%, #596a72 100%);
-	background: -o-linear-gradient(45deg, #cedce7 0%, #596a72 100%);
-	background: linear-gradient(45deg, #cedce7 0%, #596a72 100%);
+	background: -webkit-linear-gradient(45deg, #3a3d41 0%, #596a72 100%);
+	background: -o-linear-gradient(45deg, #3a3d41 0%, #596a72 100%);
+	background: linear-gradient(45deg, #3a3d41 0%, #596a72 100%);
 }
 
 .para-front:after {
@@ -114,6 +115,7 @@
 	top: 0;
 	left: 0;
 	width: 100%;
+	filter: brightness(55%);
 }
 
 .para-inner {
@@ -174,7 +176,7 @@
 	bottom: -.75rem;
 }
 
-@media screen and (max-width: 64rem) {
+/* @media screen and (max-width: 64rem) {
 	.col {
 		width: calc(33.333333% - 2rem);
 	}
@@ -191,4 +193,4 @@
 		width: 100%;
 		margin: 0 0 2rem 0;
 	}
-}
+} */

@@ -20,7 +20,7 @@ const LocationRenderer = (props) => {
 						  <span>{location.phone}</span>
 						</div>
 					</div>
-					<div class="para-back">
+					<div class="para-back" style={{backgroundImage: "url("+ location.image +")"}}>
 						<div class="para-inner">
 						  <p>{location.description}</p>
 						</div>
