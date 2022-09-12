@@ -71,7 +71,7 @@ const OneLocation = () => {
 	}
 
 	if (mapsData.length === 0) {
-		return (<div>Loading...</div>)
+		return (<div id="preloader"></div>)
 	} else {
 	return (
 		<div>

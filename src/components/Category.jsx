@@ -88,6 +88,9 @@ const Category = (props) => {
 	});
 	}
 
+	if (locArr.length === 0) {
+		return (<div id="preloader"></div>)
+	} else {
 	return (
 		<div style={{backgroundColor: "#224"}}>
     <Carousel>
@@ -104,6 +107,7 @@ const Category = (props) => {
 			</motion.div>
 		</div>
 	)
+	}
 }
 
 export default Category

@@ -77,12 +77,12 @@
 	font-size: 1.5rem;
 }
 
-.para-back {
+/* .para-back {
 	background: #cedce7;
 	background: -webkit-linear-gradient(45deg, #303436 0%, #596a72 100%);
 	background: -o-linear-gradient(45deg, #303436 0%, #596a72 100%);
 	background: linear-gradient(45deg, #303436 0%, #596a72 100%);
-}
+} */
 
 .para-front:after {
 	position: absolute;
@@ -114,7 +114,7 @@
 	top: 0;
 	left: 0;
 	width: 100%;
-	filter: brightness(55%);
+	background-blend-mode: darken;
 }
 
 .para-module {
@@ -133,7 +133,7 @@
 
 .para-module-inside {
 	/* This will make it stack on top of the ::before */
-	position: relative;
+	/* position: relative; */
 }
 
 .para-inner {

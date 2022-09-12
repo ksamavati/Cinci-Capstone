@@ -25,7 +25,8 @@ const LocationRenderer = (props) => {
 						  <span>{location.phone}</span>
 						</div>
 					</div>
-					<div className="para-back" style={{backgroundImage: "url("+ location.image +")"}}>
+					{/* <div className="para-back" style={{backgroundImage: "url("+ location.image +")"}}> */}
+					<div className="para-back" style={{background: "rgba(0, 0, 0, .55) url(" + location.image + ")"}}>
 						<div className="para-inner">
 						  <p>{location.description}</p>
 							{/* <p><Link className="btn btn-primary" to={"/destination-" + location.id} state={{ loc: location }}>More &raquo;</Link></p> */}
