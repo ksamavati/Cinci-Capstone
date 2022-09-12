@@ -20,7 +20,7 @@ const Home = () => {
 		  <section className="my-video-container" id="section1">
       {/* <video className="my-fullscreen-video my-background" src={movie} muted loop autoPlay></video> */}
     		<video className="my-fullscreen-video my-background" src={bgvideo} muted loop autoPlay></video>
-				<h1 className="text-white my-tagline">Welcome to Cincinnati
+				<h1 className="text-white my-tagline" style={{fontSize: '40pt'}}>Welcome to Cincinnati
 			  </h1>
   		</section>
 	    {/* <!-- End Hero --> */}
