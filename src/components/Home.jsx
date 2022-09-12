@@ -8,16 +8,14 @@ import Card2 from 'react-bootstrap/Card';
  import { Card, CardImg, CardText, CardBody,
   CardTitle, CardSubtitle, Button, Row, Col, Container} from 'reactstrap';
 
-console.log(bgvideo);
-
 const Home = () => {
 	useLayoutEffect(() => {
     window.scrollTo(0, 0)
 	});
 
 	return (
-		<div>
-		  <section className="my-video-container" id="section1">
+		<div className="homepage">
+		  <section className="my-video-container home-section" id="section1">
       {/* <video className="my-fullscreen-video my-background" src={movie} muted loop autoPlay></video> */}
     		<video className="my-fullscreen-video my-background" src={bgvideo} muted loop autoPlay></video>
 				<h1 className="text-white my-tagline" style={{fontSize: '40pt'}}>Welcome to Cincinnati
@@ -28,7 +26,7 @@ const Home = () => {
       <main id="main">
 
       {/* <!-- ======= About Section ======= --> */}
-    <section id="about" className="about">
+    <section id="about" className="about home-section">
       <div className="container" data-aos="fade-up">
 
         <div className="row">
@@ -65,7 +63,7 @@ const Home = () => {
 		{/* <!-- End About Section --> */}
 
     {/* <!-- ======= Counts Section ======= --> */}
-    <section id="counts" className="counts section-bg">
+    <section id="counts" className="counts section-bg home-section">
       <div className="container">
 
         <div className="row counters">
@@ -177,41 +175,41 @@ const Home = () => {
           </section>
     {/* <!-- ======= Why Us Section ======= --> */}
    
-    <section id="why-us" class="why-us">
-      <div class="container" data-aos="fade-up">
+    <section id="why-us" className="why-us home-section">
+      <div className="container" data-aos="fade-up">
 
-        <div class="row">
-          <div class="col-lg-4 d-flex align-items-stretch">
-            <div class="content">
+        <div className="row">
+          <div className="col-lg-4 d-flex align-items-stretch">
+            <div className="content">
               <h3>Why Visit Cincinnati?</h3>
               <p>
               Cincinnati is a great city with a lot to offer. The people are friendly and there is always something to do. The city has a great history and there are plenty of places to visit. The food is amazing and there is a great variety of restaurants. The city is also home to a great music scene. There are many reasons to visit Cincinnati, but these are just a few of the reasons why you should experience Cincinnati for yourself.
               </p>
-              <div class="text-center">
-                <a href="about.html" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
+              <div className="text-center">
+                <a href="about.html" className="more-btn">Learn More <i className="bx bx-chevron-right"></i></a>
               </div>
             </div>
           </div>
-          <div class="col-lg-8 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-boxes d-flex flex-column justify-content-center">
-              <div class="row">
-                <div class="col-xl-4 d-flex align-items-stretch">
-                  <div class="icon-box mt-4 mt-xl-0">
-                    <i class="bx bx-beer"></i>
+          <div className="col-lg-8 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div className="icon-boxes d-flex flex-column justify-content-center">
+              <div className="row">
+                <div className="col-xl-4 d-flex align-items-stretch">
+                  <div className="icon-box mt-4 mt-xl-0">
+                    <i className="bx bx-beer"></i>
                     <h4>Breweries</h4>
                     <p>The city has a rich brewing history, and there are a number of new and exciting breweries to check out.</p>
                   </div>
                 </div>
-                <div class="col-xl-4 d-flex align-items-stretch">
-                  <div class="icon-box mt-4 mt-xl-0">
-                    <i class="bx bx-football"></i>
+                <div className="col-xl-4 d-flex align-items-stretch">
+                  <div className="icon-box mt-4 mt-xl-0">
+                    <i className="bx bx-football"></i>
                     <h4>Sports</h4>
                     <p>Sports fans in Cincinnati are passionate about their teams and the city has a rich history of success in both professional and collegiate sports.</p>
                   </div>
                 </div>
-                <div class="col-xl-4 d-flex align-items-stretch">`
-                  <div class="icon-box mt-4 mt-xl-0">
-                    <i class="bx bx-food-menu"></i>
+                <div className="col-xl-4 d-flex align-items-stretch">`
+                  <div className="icon-box mt-4 mt-xl-0">
+                    <i className="bx bx-food-menu"></i>
                     <h4>Food</h4>
                     <p>The city has a rich food culture with a variety of cuisines to choose from. Cincinnati is also home to many great restaurants and food trucks.</p>
                   </div>
@@ -225,7 +223,7 @@ const Home = () => {
     </section>
 
     {/* <!-- ======= Features Section ======= --> */}
-    <section id="features" className="features">
+    <section id="features" className="features home-section">
       <div className="container" data-aos="fade-up">
 
         <div className="row" data-aos="zoom-in" data-aos-delay="100">
@@ -436,7 +434,7 @@ const Home = () => {
       </div>
     </section> */}
 		{/* <!-- End Trainers Section --> */}
-<section>
+<section className="home-section">
 <div>
 <Container>
   <h1>Excited? Plan Your Trip With Us!</h1>
@@ -459,7 +457,7 @@ const Home = () => {
 
           <div className="col-lg-3 col-md-6 footer-contact">
             <h3>Contact Info</h3>
-            <p>
+            <div>
              <p>City of Cincinnati</p>
       <p>8th Floor, Room 803</p>
       <p>801 Plum Street</p>
@@ -471,7 +469,7 @@ const Home = () => {
               {/* A108 Adam Street <br />
               New York, NY 535022<br />
               United States <br /><br /> */}
-            </p>
+            </div>
           </div>
 
           <div className="col-lg-2 col-md-6 footer-links">
