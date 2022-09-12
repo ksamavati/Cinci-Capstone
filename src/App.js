@@ -4,20 +4,30 @@ import Home from './components/Home';
 import Footer from './components/Footer';
 import Category from './components/Category';
 import MapPage from './components/MapPage';
-import Locations from './components/Locations';
 import LocationsTest from './components/LocationsTest';
 import OneLocation from './components/OneLocation';
 import Contact from './components/Contact';
 import Boxes from './components/Boxes';
 import {Routes, Route} from 'react-router-dom';
+import { useEffect, useState } from 'react';
 
 
 function App() {
+	const [renderFooter, setRenderFooter] = useState(true);
+
+	useEffect(() => {
+		if (window.location.pathname == './map') {
+			setRenderFooter(false);
+		} else {
+			setRenderFooter(true);
+			
+		}
+	}, [window.location.pathname]);
+
   return (
     <div className="App">
-			<header>
-				<Navbar />
-			</header>
+			<Navbar />
+			<div className="nav-offset" />
 			<main>
 				<Routes>
 					<Route exact path="/" element={<Home />} />
@@ -31,7 +41,9 @@ function App() {
 					<Route path="/:cat" element={<Category />} />
 				</Routes>
 			</main>
-			<Footer />
+			{console.log(window.location.pathname)}
+			{renderFooter && <Footer />}
+			{/* <Footer /> */}
     </div>
   );
 }

@@ -17,43 +17,38 @@ const Navbar = () => {
 
 	
 	return (
-		<header id="header" class="fixed-top" onMouseLeave={handleMouseOut}>
-    <div class="container d-flex align-items-center">
+		<header id="header" className="fixed-top" onMouseLeave={handleMouseOut}>
+    <div className="container d-flex align-items-center">
 
-      <h1 class="logo me-auto"><Link className="nav-link" to="/"
+      <h1 className="logo me-auto"><Link className="nav-link" to="/"
 								onMouseOver={handleMouseOut}>Discover<b>Cincinnati</b></Link></h1>
       {/* <!-- Uncomment below if you prefer to use an image logo --> */}
-      {/* <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>--> */}
+      {/* <!-- <a href="index.html" className="logo me-auto"><img src="assets/img/logo.png" alt="" className="img-fluid"></a>--> */}
 
-      <nav id="navbar" class="navbar order-last order-lg-0">
+      <nav id="navbar" className="navbar order-last order-lg-0">
         <ul>
 				<li className="">
-							<Link className="nav-link" to="/"
-								onMouseOver={handleMouseOut}>Home</Link>
+							<Link className="nav-link" to="/" onMouseOver={handleMouseOut}>Home</Link>
 						</li>
 						<li className="nav-item">
-							<Link className="nav-link" to="/locations"
-								onMouseOver={handleMouseOver}
-								>Locations</Link>
+							<Link className="nav-link" to="/locations" onMouseOver={handleMouseOver}>Locations</Link>
 						</li>
 						<li className="nav-item">
-							<Link className="nav-link" to="/map"
-								onMouseOver={handleMouseOut}>Map</Link>
+							<Link className="nav-link" to="/map" onMouseOver={handleMouseOut}>Map</Link>
 						</li>
 						<li className="nav-item">
-							<Link className="nav-link" to="/contact"
-								onMouseOver={handleMouseOut}>Contact</Link>
+							<Link className="nav-link" to="/contact" onMouseOver={handleMouseOut}>Contact</Link>
 						</li>
 						<li className="nav-item">
-							<Link className="nav-link" to="/boxes"
-								onMouseOver={handleMouseOut}>Boxes</Link>
+							<Link className="nav-link" to="/boxes" onMouseOver={handleMouseOut}>Boxes</Link>
 						</li>
         </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
+        <i className="bi bi-list mobile-nav-toggle"></i>
       </nav>
 			{/* <!-- .navbar --> */}
     </div>
 		{isHovering && <Subnav />}
+		{/* <Subnav /> */}
   </header>
 	)
 }

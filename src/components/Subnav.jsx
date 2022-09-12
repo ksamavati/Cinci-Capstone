@@ -3,13 +3,13 @@ import { Link } from 'react-router-dom';
 
 const Subnav = () => {
 	return (
-    <div class="container d-flex align-items-center">
+    <div className="container d-flex align-items-center">
 
-      <h1 class="logo me-auto"></h1>
+      <i className="logo me-auto"></i>
       {/* <!-- Uncomment below if you prefer to use an image logo --> */}
-      {/* <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>--> */}
+      {/* <!-- <a href="index.html" className="logo me-auto"><img src="assets/img/logo.png" alt="" className="img-fluid"></a>--> */}
 
-      <nav id="navbar" class="navbar order-last order-lg-0">
+      <nav id="subnav" className="navbar subnav order-last order-lg-0">
         <ul>
 						<li className="nav-item">
 						<Link className="nav-link" to="/attractions">Attractions</Link>
@@ -30,7 +30,7 @@ const Subnav = () => {
 						<Link className="nav-link" to="/parks">Parks and Recreation</Link>
 						</li>
         </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
+        <i className="bi bi-list mobile-nav-toggle"></i>
       </nav>
     </div>
 	)
