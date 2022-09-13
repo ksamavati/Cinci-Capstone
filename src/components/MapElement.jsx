@@ -23,7 +23,7 @@ function MapElement() {
 
   const [map, setMap] = React.useState(null)
   const [locArr, setLocArr] = React.useState([])
-  const [locIDs, setLocIDs] = React.useState([])
+  const [geocode, setGeocode] = React.useState([])
 
 	// Runs once at page load
 	useEffect(() => {
@@ -51,8 +51,23 @@ function MapElement() {
 	// Runs when locArr gets updated
 	useEffect(() => {
 		if (locArr.length !== 0 && typeof locArr !== 'undefined') {
-			setLocIDs(locArr.map(loc => {
+			let geoArr = [];
+			setGeoCode(locArr.map(loc => {
+				let config1 = {
+  			method: 'get',
+  			url: 'https://maps.googleapis.com/maps/api/geocode/json?address=' + loc.address1 +', ' + loc.address2 + '&key=AIzaSyCdU6rorFzmBl-NxqSRVJfVl7dy2nniTM8',
+  			headers: { 
+    			'Accept': 'application/json'
+  			}
+			};
 
+			axios(config1)
+			.then(function (response) {
+				console.log(JSON.stringify(response.data));
+			})
+			.catch(function (error) {
+				console.log(error);
+			});
 			}));
 		}
 	},[locArr]);
@@ -68,12 +83,6 @@ function MapElement() {
   const onUnmount = React.useCallback(function callback(map) {
     setMap(null)
   }, []);
-
-
-	const getMarkers = (locArr) => {
-
-	}
-
 
 	const position = {
 		lat: 39.103119,
