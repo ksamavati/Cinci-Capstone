@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import Carousel from "react-bootstrap/Carousel";
+import axios from 'axios';
 import '../css/OneLocation.css';
 
 const OneLocation = () => {
@@ -8,22 +9,54 @@ const OneLocation = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const { loc } = location.state;
+	let placeID = "";
 
-  // Runs once when compponent renders, equivalent to ComponentDidMount
-  // This will call Google Maps API
-  useEffect(() => {
-    const proxyurl = "https://cors-anywhere.herokuapp.com/";
-    const url =
-      "https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJA-qv_um1QYgRAhCxo0Jd_1o"; // site that doesn’t send Access-Control-*
-    fetch(proxyurl + url) // https://cors-anywhere.herokuapp.com/https://example.com
-      .then((response) => {
-        setMapsData(response.data);
-      })
-      .then((contents) => console.log(contents))
-      .catch(() =>
-        console.log("Can't access " + url + " response. Blocked by browser?")
-      );
-  }, [loc]);
+	//get data from Google Maps API
+	const getData = async () => {
+				//get Place ID
+				var config1 = {
+					method: 'get',
+					url: 'https://cors-anywhere-ks.herokuapp.com/https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=' + loc.name + '&inputtype=textquery&locationbias=point:39.1031,84.5120&key=AIzaSyCdU6rorFzmBl-NxqSRVJfVl7dy2nniTM8',
+					headers: { 
+						'Accept': 'application/json'
+					}
+				};
+				
+				await axios(config1)
+				.then(function (response) {
+					let theData = response.data;
+					placeID = theData.candidates[0].place_id;
+				})
+				.catch(function (error) {
+					console.log(error);
+				});
+		
+				console.log(placeID);
+				//get Place Details
+				var config2 = {
+					method: 'get',
+					url: 'https://cors-anywhere-ks.herokuapp.com/https://maps.googleapis.com/maps/api/place/details/json?place_id=' + placeID + '&key=AIzaSyCdU6rorFzmBl-NxqSRVJfVl7dy2nniTM8',
+					headers: { 
+						'Accept': 'application/json'
+					}
+				};
+				
+				await axios(config2)
+				.then(function (response) {
+					// setMapsData(response.data);
+					let theData = response.data;
+					setMapsData(theData.result);
+				})
+				.catch(function (error) {
+					console.log(error);
+				});
+	}
+
+	// Runs once when compponent renders, equivalent to ComponentDidMount
+	// This will call Google Maps API
+	useEffect(() => {
+		getData();	
+	}, [loc]);
 
   return (
     <div>
