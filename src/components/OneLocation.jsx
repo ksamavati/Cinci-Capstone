@@ -184,29 +184,10 @@ const OneLocation = () => {
                     </h6>
                     <h4 class="loc-title">
                       <a href="#">Website</a>
-                    </h4>
-                    <table>
-                      <tr>
-                        <th>Sunday</th>
-                        <td>Closed</td>
-                      </tr>
-                      <tr>
-                        <th>Monday</th>
-                        <td>9am - 12pm</td>
-                      </tr>
-                      <tr>
-                        <th>Tuesday</th>
-                        <td>9am - 12pm</td>
-                      </tr>
-                      <tr>
-                        <th>Wednesday</th>
-                        <td>9am - 12pm</td>
-                      </tr>
-                      <tr>
-                        <th>Thursday</th>
-                        <td>9am - 12pm</td>
-                      </tr>
-                    </table>
+                    </h4><p>
+											{mapsData.opening_hours.weekday_text.map(line => {
+												return (<div>{line}<br /></div>)
+											})}</p>
 
                     <p class="description">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
