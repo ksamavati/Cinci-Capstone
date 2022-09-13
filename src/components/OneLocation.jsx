@@ -5,10 +5,10 @@ import axios from 'axios';
 import '../css/OneLocation.css';
 
 const OneLocation = () => {
-  const [mapsData, setMapsData] = useState([]);
-  const location = useLocation();
-  const navigate = useNavigate();
-  const { loc } = location.state;
+	const [mapsData, setMapsData] = useState([]);
+	const location = useLocation();
+	const navigate = useNavigate();
+	const { loc } = location.state;
 	let placeID = "";
 
 	//get data from Google Maps API
@@ -58,58 +58,61 @@ const OneLocation = () => {
 		getData();	
 	}, [loc]);
 
-  return (
+	const getReviews = (reviewArr) => {
+		return reviewArr.map(rvw => {
+			return(
+				<div>
+				<p><img src={rvw.profile_photo_url} style={{maxHeight: '40px', maxWidth: '40px'}} /><a href={rvw.author_url}>{rvw.author_name}</a></p>
+				<p>Rating: {rvw.rating}</p>
+				<p>{rvw.relative_time_description}</p>
+				<p>{rvw.text}</p>
+				</div>
+			)
+		});
+	}
+
+	if (mapsData.length === 0) {
+		return (<div>Loading...</div>)
+	} else {
+	return (
     <div>
       <button onClick={() => navigate(-1)}>Go back</button>
 
       <Carousel>
-        <Carousel.Item interval={4000}>
-          <img
-            className="d-block w-100 my-car-img"
-            src="assets/img/course-1.jpg"
-            alt="First slide"
-          />
-          <Carousel.Caption>
-            {/* <h3>{location.name}</h3> */}
-            {/* <p>{location.description}</p> */}
-            {/* <p><a className="btn btn-primary" href="#" role="button">Learn More &raquo;</a></p> */}
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item interval={4000}>
-          <img
-            className="d-block w-100 my-car-img"
-            src="assets/img/course-2.jpg"
-            alt="First slide"
-          />
-          <Carousel.Caption>
-            {/* <h3>{location.name}</h3> */}
-            {/* <p>{location.description}</p> */}
-            {/* <p><a className="btn btn-primary" href="#" role="button">Learn More &raquo;</a></p> */}
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item interval={4000}>
-          <img
-            className="d-block w-100 my-car-img"
-            src="assets/img/course-3.jpg"
-            alt="First slide"
-          />
-          <Carousel.Caption>
-            {/* <h3>{location.name}</h3> */}
-            {/* <p>{location.description}</p> */}
-            {/* <p><a className="btn btn-primary" href="#" role="button">Learn More &raquo;</a></p> */}
-          </Carousel.Caption>
-        </Carousel.Item>
-      </Carousel>
+			{mapsData.photos.map(photo => {
+			return(
+				<Carousel.Item interval={4000}>
+			<img
+				className="d-block w-100 my-car-img"
+				src={"https://maps.googleapis.com/maps/api/place/photo?maxwidth=2560&photo_reference=" + photo.photo_reference +  "&key=AIzaSyCdU6rorFzmBl-NxqSRVJfVl7dy2nniTM8"}
+				alt={loc.name}
+			/>
+			<Carousel.Caption>
+				<h1>{loc.name}</h1>
+				{/* <p>{location.description}</p> */}
+			</Carousel.Caption>
+		</Carousel.Item>
 
-      <p>This is the One Location Page</p>
-      <img src={loc.image} alt={"Photo of " + loc.name} />
-      <p>{loc.name}</p>
-      <p>{loc.address1}</p>
-      <p>{loc.address2}</p>
-      <p>{loc.phone}</p>
-      <p>{loc.category}</p>
-      <p>{loc.description}</p>
-      <p>{console.log(mapsData)}</p>
+			)
+		})}
+      </Carousel>
+			<button onClick={() => navigate(-1)}>Go back</button>
+			{/* <img src={loc.image} alt={"Photo of " + loc.name} /> */}
+			<p>Name: {loc.name}</p>
+			<p>Address: {loc.address1}</p>
+			<p>{loc.address2}</p>
+			<p>Phone: {loc.phone}</p>
+			{/* <p>Category: {loc.category}</p> */}
+			<p>{loc.description}</p>
+			<p><a href={mapsData.url}>View on Google Maps</a></p>
+			<p>Website: <a href={mapsData.website}>{mapsData.website}</a></p>
+			<p>{mapsData.opening_hours.weekday_text.map(line => {
+				return (<p>{line}</p>)
+			})}</p>
+			<p>Average Rating: {mapsData.rating}</p>
+			<p>Total Ratings: {mapsData.user_ratings_total}</p>
+			<p>Reviews:</p>
+			{getReviews(mapsData.reviews)}
 
       <section class="location-cards">
         <div class="container location-capston">
@@ -398,6 +401,7 @@ const OneLocation = () => {
       </section>
     </div>
   );
+	}
 };
 
 export default OneLocation;
