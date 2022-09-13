@@ -1,22 +1,23 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
+import "../css/Boxes.css"
 
 const Boxes = () => {
   return (
     <div>
       <section className="fun-facts">
         <div className="container">
-          <h1 className="text-center text-success my-5">DID YOU KNOW!!</h1>
+          <h1 className="fn-title text-center my-5">DID YOU KNOW!!</h1>
           <div className="row">
             <div className="col-md-6 col-lg-4 d-flex justify-content-center">
-              <div className="card m-2 cb1 text-center">
-                <div className="card-body">
-                  <span className="card-number fw-bold">01</span>
-                  <h2 className="card-title mb-4">
+              <div className="fn-card m-2 cb1 text-center">
+                <div className="fn-card-body">
+                  <span className="fn-card-number fw-bold">01</span>
+                  <h2 className="fn-card-title mb-4">
                     Over-the-Rhine Brewery District
                   </h2>
-                  <p className="card-text">
+                  <p className="fn-card-text">
                     Somewhere between Prohibition, two world wars and urban
                     sprawl, the tunnels beneath Over-the-Rhine, Newport and
                     Covington that brewery workers used to access lagering
@@ -30,17 +31,17 @@ const Boxes = () => {
                     be the fourth largest brewery in Cincinnati, but never
                     reopened after Prohibition.!.
                   </p>
-                  <button className="btn-bw btn-success">Read More</button>
+                  <button className="fn-btn btn-success">Read More</button>
                 </div>
               </div>
             </div>
 
             <div className="col-md-6 col-lg-4 d-flex justify-content-center">
-              <div className="card m-2 cb1 text-center">
-                <div className="card-body">
-                  <span className="card-number fw-bold">02</span>
-                  <h2 className="card-title mb-4">Built on Beer</h2>
-                  <p className="card-text">
+              <div className="fn-card m-2 cb1 text-center">
+                <div className="fn-card-body">
+                  <span className="fn-card-number fw-bold">02</span>
+                  <h2 className="fn-card-title mb-4">Built on Beer</h2>
+                  <p className="fn-card-text">
                     Cincinnati and Northern Kentucky were, quite literally,
                     built on beer. By the mid-1800s, 36 breweries were producing
                     more than 30 million gallons of beer and digging underground
@@ -54,17 +55,17 @@ const Boxes = () => {
                     Cincinnati and Northern Kentucky has surpased the number
                     that exhisted prior to Prohibition.
                   </p>
-                  <button className="btn btn-success">Read More</button>
+                  <button className="fn-btn btn-success">Read More</button>
                 </div>
               </div>
             </div>
 
             <div className="col-md-6 col-lg-4 d-flex justify-content-center">
-              <div className="card m-2 cb1 text-center">
-                <div className="card-body">
-                  <span className="card-number fw-bold">03</span>
-                  <h2 className="card-title mb-4">Beer Capital of the World</h2>
-                  <p className="card-text">
+              <div className="fn-card m-2 cb1 text-center">
+                <div className="fn-card-body">
+                  <span className="fn-card-number fw-bold">03</span>
+                  <h2 className="fn-card-title mb-4">Beer Capital of the World</h2>
+                  <p className="fn-card-text">
                     In 1860, as many as 36 breweries operated in Cincinnati. By
                     1889, a fewer number of breweries (23) produced even more
                     beer, collectively brewing 35,700,000 gallons of suds drunk
@@ -77,7 +78,7 @@ const Boxes = () => {
                     the canal. From 1875-1900, 17 operated in Over-the-Rhine and
                     the West End.
                   </p>
-                  <button className="btn btn-success">Read More</button>
+                  <button className="fn-btn btn-success">Read More</button>
                 </div>
               </div>
             </div>
