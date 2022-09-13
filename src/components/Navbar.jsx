@@ -1,9 +1,13 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import '../css/Navbar.css';
-import Subnav from './Subnav';
-import {Transition, CSSTransition, SwitchTransition, TransitionGroup} from "react-transition-group";
-
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import "../css/Navbar.css";
+import Subnav from "./Subnav";
+import {
+  Transition,
+  CSSTransition,
+  SwitchTransition,
+  TransitionGroup,
+} from "react-transition-group";
 
 const Navbar = () => {
 		const [isHovering, setIsHovering] = useState(false);
@@ -15,15 +19,16 @@ const Navbar = () => {
 			setIsHovering(false);
 		};
 
-	
-	return (
-		<header id="header" className="fixed-top" onMouseLeave={handleMouseOut}>
-    <div className="container d-flex align-items-center">
-
-      <h1 className="logo me-auto"><Link className="nav-link" to="/"
-								onMouseOver={handleMouseOut}>Discover<b>Cincinnati</b></Link></h1>
-      {/* <!-- Uncomment below if you prefer to use an image logo --> */}
-      {/* <!-- <a href="index.html" className="logo me-auto"><img src="assets/img/logo.png" alt="" className="img-fluid"></a>--> */}
+  return (
+    <header id="header" className="fixed-top" onMouseLeave={handleMouseOut}>
+      <div className="container d-flex align-items-center">
+        <h1 className="logo me-auto">
+          <Link className="nav-link" to="/" onMouseOver={handleMouseOut}>
+            Discover<b>Cincinnati</b>
+          </Link>
+        </h1>
+        {/* <!-- Uncomment below if you prefer to use an image logo --> */}
+        {/* <!-- <a href="index.html" className="logo me-auto"><img src="assets/img/logo.png" alt="" className="img-fluid"></a>--> */}
 
       <nav id="navbar" className="navbar order-last order-lg-0">
         <ul>
@@ -52,5 +57,3 @@ const Navbar = () => {
   </header>
 	)
 }
-
-export default Navbar
