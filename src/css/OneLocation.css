@@ -1,3 +1,48 @@
+/* -----CSS GRID----- */
+.my-cssgrid-container {
+	display: grid;
+	grid-template-columns: 1.5fr 0.5fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 0px 0px;
+	grid-auto-flow: row;
+	grid-template-areas:
+		"my-address-cell my-address-cell my-map-cell my-map-cell my-map-cell my-map-cell"
+		"my-hours-cell my-description-cell my-description-cell my-description-cell my-contact-cell my-contact-cell";
+}
+
+.my-address-cell {
+	grid-area: my-address-cell;
+	justify-self: center;
+	align-self: center;
+}
+
+.my-hours-cell {
+	grid-area: my-hours-cell;
+	justify-self: center;
+	align-self: center;
+}
+
+.my-description-cell {
+	grid-area: my-description-cell;
+	justify-self: center;
+	align-self: center;
+}
+
+.my-contact-cell {
+	grid-area: my-contact-cell;
+	justify-self: center;
+	align-self: center;
+}
+
+.my-map-cell {
+	grid-area: my-map-cell;
+	justify-self: center;
+	align-self: center;
+}
+
+
+/* -----END CSS GRID ----- */
+
 .location-cards {
 	margin-top: 40px;
 }
@@ -46,7 +91,7 @@
 }
 
 .card-loc.card-just-text .content {
-	padding: 50px 40px;
+	padding: 40px 40px;
 	text-align: center;
 }
 
